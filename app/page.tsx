@@ -14,6 +14,7 @@ import Portfolio from "@/components/portfolio"
 import Cta from "@/components/cta"
 import Stats from "@/components/stats"
 import Blog from "@/components/blog"
+import Links from "@/components/links"
 
 export default function Home() {
   return (
@@ -60,6 +61,7 @@ export default function Home() {
 
       {/* Blog Section */}
       <Blog />
+      <Links />
 
       {/* Footer */}
       <Footer />
