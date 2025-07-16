@@ -60,7 +60,7 @@ export default function Home() {
       <Stats />
 
       {/* Blog Section */}
-      <Blog />
+
       <Links />
 
       {/* Footer */}

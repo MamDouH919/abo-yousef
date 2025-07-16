@@ -42,13 +42,13 @@ const Services = () => {
 
                         </div>
                     </div>
-                    <div className="relative">
+
+                    <div className="relative w-full aspect-[2/1]">
                         <Image
-                            src="/placeholder.svg?height=360&width=360"
+                            src="/images/bg2.webp"
                             alt="خدمات الصباغة"
-                            width={360}
-                            height={360}
-                            className="rounded-lg"
+                            fill
+                            className="rounded-lg object-cover"
                         />
                     </div>
                 </div>

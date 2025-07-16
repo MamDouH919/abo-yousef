@@ -8,7 +8,7 @@ const inter = Libre_Barcode_39({ subsets: ["latin"], weight: "400" })
 const elmessiri = El_Messiri({ subsets: ["latin"], weight: "400" })
 
 export const metadata: Metadata = {
-  title: "أبو سيارة - أفضل صباغ في الكويت",
+  title: "أبو يوسف - أفضل صباغ في الكويت",
   description: "خدمات الصباغة والدهان المتميزة في الكويت",
   generator: 'v0.dev'
 }

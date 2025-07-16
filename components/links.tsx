@@ -174,7 +174,15 @@ export const zones = [
     { id: 84, title: "صباغ الاندلس", href: "sabaagh-alandalus" },
     { id: 85, title: "صباغ القرين", href: "sabaagh-alqrean" },
     { id: 86, title: "صباغ القصور", href: "sabaagh-alkswor" },
-    { id: 87, title: "صباغ العدان", href: "sabaagh-aladaan" }
+    { id: 87, title: "صباع سعد العبدالله", href: "sabaagh-saad-alabdullah" },
+    { id: 87, title: "صباغ الجهراء", href: "sabaagh-aljahraa" },
+    { id: 87, title: "صباغ عبدالله مبارك", href: "sabaagh-abdullah-mubarak" },
+    { id: 87, title: "صباغ غرب عبدالله", href: "sabaagh-gharb-abdullah" },
+    { id: 87, title: "صباغ جنوب عبدالله", href: "sabaagh-janoub-abdullah" },
+    { id: 87, title: "صباغ العارضية", href: "sabaagh-alaardiya" },
+    { id: 87, title: "صباغ الفردوس", href: "sabaagh-alfardus" },
+    { id: 87, title: "صباغ صباح الناصر", href: "sabaagh-subah-alanasir" },
+    { id: 87, title: "صباغ الرومانسية", href: "sabaagh-aloromanisya" },
 ];
 
 const allLinks = links.concat(zones)
@@ -190,8 +198,8 @@ const Links = () => {
                 </div>
 
                 <div className="mt-6 flex flex-wrap justify-center gap-3">
-                    {allLinks.map((element) => (
-                        <Link key={element.id} title={element.title} href={element.href}>
+                    {allLinks.map((element, index) => (
+                        <Link key={index} title={element.title} href={element.href}>
                             <Badge variant="secondary" className='px-4 py-2 text-sm'>
                                 {element.title}
                             </Badge>

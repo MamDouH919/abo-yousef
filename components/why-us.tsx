@@ -7,13 +7,12 @@ const WhyUs = () => {
         <section className="py-16">
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    <div className="relative">
+                    <div className="relative w-full aspect-[2/1]">
                         <Image
-                            src="/placeholder.svg?height=400&width=400"
-                            alt="لماذا تختارنا"
-                            width={400}
-                            height={400}
-                            className="rounded-lg"
+                            src="/images/why-us.webp"
+                            alt="خدمات الصباغة"
+                            fill
+                            className="rounded-lg object-cover"
                         />
                     </div>
                     <div>

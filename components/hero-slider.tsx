@@ -9,11 +9,11 @@ import "@splidejs/react-splide/css"
 const slides = [
   {
     id: 1,
-    title: "أبو يوسيف",
+    title: "أبو يوسف",
     subtitle: "أفضل صباغ في الكويت",
     description: "خدمات الصباغة والدهان المتميزة",
     buttonText: "اتصل بنا الآن",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/images/painter.webp",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const slides = [
     subtitle: "جودة عالية وأسعار منافسة",
     description: "نقدم أفضل خدمات الصباغة في الكويت",
     buttonText: "شاهد أعمالنا",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/images/bg2.webp",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const slides = [
     subtitle: "خبرة تزيد عن 15 عاماً",
     description: "فريق من أمهر الصباغين المحترفين",
     buttonText: "احصل على عرض سعر",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/images/bg3.webp",
   },
 ]
 
@@ -60,9 +60,8 @@ function AnimatedText({ lines, isActive, delay = 500 }: AnimatedTextProps) {
       {lines.map((line, index) => (
         <div
           key={index}
-          className={`transition-all duration-700 transform ${
-            index < visibleLines ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={`transition-all duration-700 transform ${index < visibleLines ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
         >
           {index === 0 && <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">{line}</h1>}
           {index === 1 && <h2 className="text-3xl md:text-4xl text-white/90 drop-shadow-lg">{line}</h2>}
@@ -120,9 +119,10 @@ export function HeroSlider() {
                 className="object-cover"
                 priority={index === 0}
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r to-black/60 via-black/40 from-transparent" />
 
-              <div className="absolute inset-0 flex items-center pr-32">
+              {/* remove padding right for small screens */}
+              <div className="absolute inset-0 flex items-center pr-0 md:pr-32">
                 <div className="container mx-auto px-4">
                   <div className="max-w-3xl">
                     <AnimatedText

@@ -4,6 +4,13 @@ import "@splidejs/react-splide/css"
 import Image from 'next/image'
 import { Card, CardContent } from './ui/card'
 
+
+
+
+
+
+
+
 const Portfolio = () => {
     return (
         <section className="py-16 bg-gray-50">
@@ -34,14 +41,13 @@ const Portfolio = () => {
                     className="portfolio-slider"
                 >
                     {[
-                        { id: 1, title: "صباغة فيلا فاخرة", description: "مشروع صباغة فيلا بألوان عصرية", isMain: true },
-                        { id: 2, title: "مكتب تجاري", description: "صباغة مكتب بتصميم احترافي", isMain: false },
-                        { id: 3, title: "شقة سكنية", description: "تجديد شقة بألوان هادئة", isMain: false },
-                        { id: 4, title: "مطعم عصري", description: "صباغة مطعم بديكور مميز", isMain: true },
-                        { id: 5, title: "صالة أفراح", description: "صباغة صالة بألوان ذهبية", isMain: false },
-                        { id: 6, title: "منزل عائلي", description: "تجديد منزل كامل", isMain: false },
-                        { id: 7, title: "مركز تجاري", description: "صباغة مجمع تجاري", isMain: true },
-                        { id: 8, title: "مدرسة خاصة", description: "صباغة مدرسة بألوان مبهجة", isMain: false },
+                        { id: 1, title: "صباغة فيلا فاخرة", image: "portfolio/port1.jpeg", isMain: true },
+                        { id: 2, title: "مكتب تجاري", image: "portfolio/port2.jpeg", isMain: false },
+                        { id: 3, title: "شقة سكنية", image: "portfolio/port3.jpeg", isMain: false },
+                        { id: 4, title: "مطعم عصري", image: "portfolio/port4.jpeg", isMain: true },
+                        { id: 5, title: "صالة أفراح", image: "portfolio/port5.jpeg", isMain: false },
+                        { id: 6, title: "منزل عائلي", image: "portfolio/port6.jpeg", isMain: false },
+                        { id: 7, title: "مركز تجاري", image: "portfolio/port7.jpeg", isMain: true },
                     ].map((item) => (
                         <SplideSlide key={item.id}>
                             <Card
@@ -50,7 +56,7 @@ const Portfolio = () => {
                                 <CardContent className="p-0">
                                     <div className="relative">
                                         <Image
-                                            src={`/placeholder.svg?height=650&width=350`}
+                                            src={item.image}
                                             alt={item.title}
                                             width={650}
                                             height={650}

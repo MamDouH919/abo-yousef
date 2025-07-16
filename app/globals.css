@@ -120,6 +120,12 @@ body {
   height: 100%;
 }
 
+/* hide arrows in small screens */
+@media (max-width: 768px) {
+  .hero-slider .splide__arrow {
+    display: none !important;
+  }
+}
 .hero-slider .splide__arrow {
   background: rgba(153, 0, 17, 0.8) !important;
   border: 2px solid rgba(252, 246, 245, 0.3) !important;
@@ -134,7 +140,6 @@ body {
 .hero-slider .splide__arrow:hover {
   background: rgba(153, 0, 17, 1) !important;
   border-color: rgba(252, 246, 245, 0.8) !important;
-  transform: scale(1.1);
 }
 
 .hero-slider .splide__arrow:disabled {
