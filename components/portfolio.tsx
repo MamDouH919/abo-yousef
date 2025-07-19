@@ -1,14 +1,11 @@
+"use client"
 import React from 'react'
 import { Splide, SplideSlide } from "@splidejs/react-splide"
 import "@splidejs/react-splide/css"
 import Image from 'next/image'
 import { Card, CardContent } from './ui/card'
 
-
-
-
-
-
+import portfolio from '@/lib/portfolio.json'
 
 
 const Portfolio = () => {
@@ -29,6 +26,8 @@ const Portfolio = () => {
                         pagination: true,
                         arrows: true,
                         direction: "rtl",
+                        autoplay: true,
+                        interval: 3000,
                         breakpoints: {
                             768: {
                                 perPage: 1,
@@ -40,16 +39,8 @@ const Portfolio = () => {
                     }}
                     className="portfolio-slider"
                 >
-                    {[
-                        { id: 1, title: "صباغة فيلا فاخرة", image: "portfolio/port1.jpeg", isMain: true },
-                        { id: 2, title: "مكتب تجاري", image: "portfolio/port2.jpeg", isMain: false },
-                        { id: 3, title: "شقة سكنية", image: "portfolio/port3.jpeg", isMain: false },
-                        { id: 4, title: "مطعم عصري", image: "portfolio/port4.jpeg", isMain: true },
-                        { id: 5, title: "صالة أفراح", image: "portfolio/port5.jpeg", isMain: false },
-                        { id: 6, title: "منزل عائلي", image: "portfolio/port6.jpeg", isMain: false },
-                        { id: 7, title: "مركز تجاري", image: "portfolio/port7.jpeg", isMain: true },
-                    ].map((item) => (
-                        <SplideSlide key={item.id}>
+                    {portfolio.map((item, index) => (
+                        <SplideSlide key={index}>
                             <Card
                                 className={`overflow-hidden hover:shadow-lg transition-all duration-300`}
                             >

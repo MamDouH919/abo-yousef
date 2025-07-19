@@ -182,10 +182,10 @@ export const zones = [
     { id: 87, title: "صباغ العارضية", href: "sabaagh-alaardiya" },
     { id: 87, title: "صباغ الفردوس", href: "sabaagh-alfardus" },
     { id: 87, title: "صباغ صباح الناصر", href: "sabaagh-subah-alanasir" },
-    { id: 87, title: "صباغ الرومانسية", href: "sabaagh-aloromanisya" },
+    { id: 87, title: "صباغ الرومانسية", href: "sabaagh-alromanisya" },
 ];
 
-const allLinks = links.concat(zones)
+export const allLinks = links.concat(zones)
 
 const Links = () => {
     return (
@@ -199,8 +199,8 @@ const Links = () => {
 
                 <div className="mt-6 flex flex-wrap justify-center gap-3">
                     {allLinks.map((element, index) => (
-                        <Link key={index} title={element.title} href={element.href}>
-                            <Badge variant="secondary" className='px-4 py-2 text-sm'>
+                        <Link key={index} title={element.title} href={`abo-yousef/${element.href}`}>
+                            <Badge variant="outline" className='px-4 py-2 text-sm border-secondary'>
                                 {element.title}
                             </Badge>
                         </Link>

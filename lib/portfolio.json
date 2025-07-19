@@ -1,0 +1,77 @@
+[
+    {
+        "title": "صباغ",
+        "image": "portfolio/port1.jpeg",
+        "isMain": true
+    },
+    {
+        "title": "جميع اعمل الاصباغ والتاسيس",
+        "image": "portfolio/port2.jpeg",
+        "isMain": false
+    },
+    {
+        "title": "صبغ ايطالى",
+        "image": "portfolio/port3.jpeg",
+        "isMain": false
+    },
+    {
+        "title": "صبغ لامع و مطفى",
+        "image": "portfolio/port4.jpeg",
+        "isMain": true
+    },
+    {
+        "title": "اصباغ جوتن",
+        "image": "portfolio/jotun.webp",
+        "isMain": false
+    },
+    {
+        "title": "اصباغ GTC",
+        "image": "portfolio/gtc.jpg",
+        "isMain": false
+    },
+    {
+        "title": "عازل الأسطح بجميع أنواعه",
+        "image": "portfolio/azel.webp",
+        "isMain": true
+    },
+    {
+        "title": "جبس بورد",
+        "image": "portfolio/jabs.jpg",
+        "isMain": true
+    },
+    {
+        "title": "ديكورات وبرويز",
+        "image": "portfolio/decors.webp",
+        "isMain": true
+    },
+    {
+        "title": "اعمل خلفيات للتلفزيون والشاشات",
+        "image": "portfolio/tv.webp",
+        "isMain": true
+    },
+    {
+        "title": "بديل الرخام",
+        "image": "portfolio/ro5am.webp",
+        "isMain": true
+    },
+    {
+        "title": "بديل الخشب",
+        "image": "portfolio/5ashb.webp",
+        "isMain": true
+    },
+    {
+        "title": "بديل الشيبورد",
+        "image": "portfolio/sheboard.webp",
+        "isMain": true
+    },
+    {
+        "title": "ورق جدران",
+        "image": "portfolio/wall-paper.webp",
+        "isMain": true
+    },
+    {
+        "title": "بديل الحجر",
+        "image": "portfolio/7agr.jpg",
+        "isMain": true
+    }
+]

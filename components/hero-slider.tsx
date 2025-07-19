@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { Splide, SplideSlide } from "@splidejs/react-splide"
 import "@splidejs/react-splide/css"
@@ -13,7 +12,7 @@ const slides = [
     subtitle: "أفضل صباغ في الكويت",
     description: "خدمات الصباغة والدهان المتميزة",
     buttonText: "اتصل بنا الآن",
-    image: "/images/painter.webp",
+    image: "/images/bg6.jpg",
   },
   {
     id: 2,
@@ -21,7 +20,7 @@ const slides = [
     subtitle: "جودة عالية وأسعار منافسة",
     description: "نقدم أفضل خدمات الصباغة في الكويت",
     buttonText: "شاهد أعمالنا",
-    image: "/images/bg2.webp",
+    image: "/images/bg5.jpg",
   },
   {
     id: 3,
@@ -89,7 +88,7 @@ export function HeroSlider() {
   }, [])
 
   return (
-    <div className="relative h-[600px] overflow-hidden">
+    <div className="relative h-[400px] md:h-[600px] overflow-hidden">
       <Splide
         options={{
           type: "loop",
@@ -103,11 +102,12 @@ export function HeroSlider() {
           interval: 6000,
           pauseOnHover: true,
           resetProgress: false,
-          height: "600px",
+          // height: "600px",
           cover: true,
         }}
         onMove={handleSlideChange}
-        className="hero-slider h-full"
+
+        className="hero-slider h-[400px] md:h-[600px]"
       >
         {slides.map((slide, index) => (
           <SplideSlide key={slide.id}>
@@ -116,7 +116,7 @@ export function HeroSlider() {
                 src={slide.image || "/placeholder.svg"}
                 alt={slide.title}
                 fill
-                className="object-cover"
+                className="md:object-cover object-cover"
                 priority={index === 0}
               />
               <div className="absolute inset-0 bg-gradient-to-r to-black/60 via-black/40 from-transparent" />
@@ -130,21 +130,6 @@ export function HeroSlider() {
                       isActive={currentSlide === index && isSlideActive}
                       delay={600}
                     />
-
-                    {/* <div
-                      className={`mt-8 transition-all duration-1000 delay-1000 transform ${
-                        currentSlide === index && isSlideActive
-                          ? "opacity-100 translate-y-0"
-                          : "opacity-0 translate-y-8"
-                      }`}
-                    >
-                      <Button
-                        size="lg"
-                        className="bg-secondary hover:bg-secondary/90 text-primary font-bold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                      >
-                        {slide.buttonText}
-                      </Button>
-                    </div> */}
                   </div>
                 </div>
               </div>

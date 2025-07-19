@@ -24,7 +24,7 @@ const Footer = () => {
                                 <MapPin className="w-8 h-8 ml-3 text-yellow-400" />
                                 <h3 className="text-xl font-bold border-b-2 border-yellow-400 pb-1">مواقعنا</h3>
                             </div>
-                            <p className="text-lg">كل محافظات الكويت</p>
+                            <p className="text-lg text-center">كل محافظات الكويت</p>
                         </div>
 
                         {/* Phone Number */}
@@ -33,7 +33,7 @@ const Footer = () => {
                                 <Phone className="w-8 h-8 ml-3 text-yellow-400" />
                                 <h3 className="text-xl font-bold border-b-2 border-yellow-400 pb-1">رقم الهاتف</h3>
                             </div>
-                            <p className="text-lg font-bold">97446565</p>
+                            <p className="text-lg font-bold">50713199</p>
                         </div>
                     </div>
                 </div>

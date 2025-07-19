@@ -1,6 +1,6 @@
 'use client'
 
-import React from "react"
+import React, { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import {
@@ -8,20 +8,23 @@ import {
     Twitter,
     Instagram,
     Phone,
-    Mail,
     Home,
     UserRound,
     BookHeart,
+    Menu,
+    X,
 } from "lucide-react"
 import { Button } from "./ui/button"
 import clsx from "clsx"
+import { motion, AnimatePresence } from "framer-motion"
 
 const Header = () => {
     const pathname = usePathname()
+    const [menuOpen, setMenuOpen] = useState(false)
 
     const navLinks = [
         { href: "/", label: "الرئيسية", icon: Home },
-        { href: "/about", label: "عن صباغ الكويت", icon: UserRound },
+        { href: "/about-us", label: "عن صباغ الكويت", icon: UserRound },
         { href: "/services", label: "خدماتنا", icon: BookHeart },
         { href: "/contact", label: "اتصل بنا", icon: Phone },
     ]
@@ -29,26 +32,11 @@ const Header = () => {
     return (
         <header className="sticky top-0 z-50 backdrop-blur bg-secondary text-primary border-b border-primary/10">
             <div className="container mx-auto px-4">
-                {/* Top Bar */}
-                {/* <div className="flex justify-between items-center py-2 text-sm border-b border-primary/20">
-                    <div className="flex items-center space-x-4 space-x-reverse"></div>
-                    <div className="flex space-x-2 space-x-reverse">
-                        <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/20">
-                            <Facebook className="w-4 h-4" />
-                        </Button>
-                        <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/20">
-                            <Twitter className="w-4 h-4" />
-                        </Button>
-                        <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/20">
-                            <Instagram className="w-4 h-4" />
-                        </Button>
-                    </div>
-                </div> */}
-
-                {/* Main Navigation */}
                 <nav className="py-4">
                     <div className="flex justify-between items-center">
                         <div className="text-2xl font-bold">أبو يوسف للصباغة</div>
+
+                        {/* Desktop Menu */}
                         <div className="hidden md:flex space-x-8 space-x-reverse">
                             {navLinks.map(({ href, label, icon: Icon }) => (
                                 <Link
@@ -64,7 +52,42 @@ const Header = () => {
                                 </Link>
                             ))}
                         </div>
+
+                        {/* Mobile Menu Button */}
+                        <div className="md:hidden">
+                            <Button variant="ghost" size="icon" onClick={() => setMenuOpen(!menuOpen)}>
+                                {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                            </Button>
+                        </div>
                     </div>
+
+                    {/* Mobile Menu Animated */}
+                    <AnimatePresence>
+                        {menuOpen && (
+                            <motion.div
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: "auto", opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                                className="overflow-hidden flex flex-col mt-4 space-y-2 md:hidden"
+                            >
+                                {navLinks.map(({ href, label, icon: Icon }) => (
+                                    <Link
+                                        key={href}
+                                        href={href}
+                                        onClick={() => setMenuOpen(false)}
+                                        className={clsx(
+                                            "flex items-center px-4 py-2 rounded hover:bg-primary/10",
+                                            pathname === href ? "text-primary font-semibold" : "text-primary/60"
+                                        )}
+                                    >
+                                        <Icon className="w-4 h-4 ml-2" />
+                                        {label}
+                                    </Link>
+                                ))}
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </nav>
             </div>
         </header>

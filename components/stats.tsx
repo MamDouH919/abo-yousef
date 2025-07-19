@@ -10,7 +10,7 @@ const Stats = () => {
                         <div className="text-gray-600">مشروع مكتمل</div>
                     </div>
                     <div>
-                        <div className="text-4xl font-bold text-secondary mb-2">15+</div>
+                        <div className="text-4xl font-bold text-secondary mb-2">25+</div>
                         <div className="text-gray-600">سنة خبرة</div>
                     </div>
                     <div>
