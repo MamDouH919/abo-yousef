@@ -190,7 +190,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     const title = link?.title || 'صباغ الكويت'
 
     return {
-        title: `صباغ الكويت - 51108895 - صباغ شاطر ورخيص - ${title}`,
+        title: `صباغ الكويت - 50713199 - صباغ شاطر ورخيص - ${title}`,
         keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
     }
 }
