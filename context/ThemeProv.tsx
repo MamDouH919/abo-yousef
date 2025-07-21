@@ -25,10 +25,10 @@ const ThemeProv = ({ children }: { children: React.ReactNode }) => {
         palette: {
             mode: "light",
             primary: {
-                main: "#755139",
+                main: "#990011",
             },
             secondary: {
-                main: "#F2EDD7",
+                main: "#FCF6F5",
             },
             background: {
                 default: "#fafafa",

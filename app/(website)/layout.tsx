@@ -14,7 +14,7 @@ const Layout = ({
     return (
         <div className="min-h-screen">
             {/* Floating Social Media Icons */}
-            <div className="fixed left-4 bottom-[-10px] -translate-y-1/2 flex flex-col space-y-6 z-50">
+            <div className="fixed left-4 bottom-[-50px] -translate-y-1/2 flex flex-col space-y-6 z-50">
                 <Link
                     href="https://www.instagram.com/bkhyt.hlmy.2025"
                     target="_blank"

@@ -3,15 +3,67 @@ import type { Metadata } from "next"
 import { Libre_Barcode_39, El_Messiri } from "next/font/google"
 import "./globals.css"
 import ThemeProv from "@/context/ThemeProv"
+import allLinks from "@/lib/links.json"
 
 const inter = Libre_Barcode_39({ subsets: ["latin"], weight: "400" })
 const elmessiri = El_Messiri({ subsets: ["latin"], weight: "400" })
 
 export const metadata: Metadata = {
-  title: "أبو يوسف - أفضل صباغ في الكويت",
-  description: "خدمات الصباغة والدهان المتميزة في الكويت",
-  generator: 'v0.dev'
-}
+  title: "أبو يوسف - صباغ الكويت - 50713199",
+  description: "خدمات الأصباغ والدهان المتميزة في الكويت",
+  robots: "index,follow",
+  generator: 'mamdouh.mountain-egy.site',
+  keywords: "صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, أبو يوسف, صباغ الكويت - 50713199 - صباغ شاطر ورخيص , أفضل صباغ في الكويت, الكويت, الاصباغ, الدهان, الصباغ",
+  openGraph: {
+    type: "article",
+    authors: ["صباغ الكويت", "https://fanalsabaghkuwait.com"],
+    locale: "ar_AR",
+    url: "https://fanalsabaghkuwait.com",
+    title: "أبو يوسف - صباغ الكويت - 50713199",
+    description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية بجودة عالية وبأسعار تنافسية.",
+    images: [
+      {
+        url: "https://fanalsabaghkuwait.com/image.png",
+        width: 1200,
+        height: 630,
+        alt: "صباغ الكويت",
+      },
+      {
+        url: "https://fanalsabaghkuwait.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "صباغ الكويت",
+      },
+    ],
+    siteName: "أبو يوسف - صباغ الكويت - 50713199",
+    section: "خدمات صباغة",
+    publishedTime: "2024-10-1T12:00:00Z", // Publication date of the article
+    modifiedTime: "2024-10-10T14:00:00Z", // Last modified time (optional)
+    alternateLocale: "ar"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "أبو يوسف - صباغ الكويت - 50713199",
+    description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية بجودة عالية في جميع مناطق الكويت.",
+    images: "https://fanalsabaghkuwait.com/logo.png",
+  },
+  manifest: "/manifest.json",
+  authors: {
+    name: "أبو يوسف - صباغ الكويت - 50713199",
+    url: "https://fanalsabaghkuwait.com",
+  },
+  bookmarks: ["صباغ الكويت", "صباغ شاطر", "صباغ رخيص", "الكويت", "أبو يوسف - صباغ الكويت - 50713199"],
+  alternates: {
+    canonical: "https://fanalsabaghkuwait.com", // Canonical URL for SEO purposes
+    languages: {
+      "ar": "https://fanalsabaghkuwait.com", // If you have an Arabic language version
+    },
+  },
+  applicationName: "أبو يوسف - صباغ الكويت - 50713199",
+  creator: "mamdouh mohammed",
+  category: "خدمات صباغة",
+};
+
 
 export default function RootLayout({
   children,
@@ -20,7 +72,87 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
-      <head />
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta httpEquiv="content-language" content="ar" />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "WebPage",
+                    "@id": "https://fanalsabaghkuwait.com/",
+                    "url": "https://fanalsabaghkuwait.com/",
+                    "name": "صباغ الكويت - 50713199 - صباغ شاطر ورخيص",
+                    "isPartOf": { "@id": "https://fanalsabaghkuwait.com#website" },
+                    "primaryImageOfPage": { "@id": "https://fanalsabaghkuwait.com/#primaryimage" },
+                    "image": { "@id": "https://fanalsabaghkuwait.com/#primaryimage" },
+                    "thumbnailUrl": "https://fanalsabaghkuwait.com/logo.png",
+                    "datePublished": "2020-12-29T13:47:49+00:00", "dateModified": "2024-10-01T07:59:36+00:00",
+                    "description": "صباغ الكويت , هل تريد رقم صباغ شاطر ورخيص بالكويت ؟ نوفر لك افضل تصميمات وديكورات منزليه احترافيه فني تركيب ورق جدران ممتاز اتصل الان",
+                    "breadcrumb": { "@id": "https://fanalsabaghkuwait.com/#breadcrumb" },
+                    "inLanguage": "ar",
+                    "potentialAction": [{ "@type": "ReadAction", "target": ["https://fanalsabaghkuwait.com/"] }]
+                  },
+                  {
+                    "@type": "ImageObject",
+                    "inLanguage": "ar",
+                    "@id": "https://fanalsabaghkuwait.com/#primaryimage",
+                    "url": "https://fanalsabaghkuwait.com/logo.png",
+                    "contentUrl": "https://fanalsabaghkuwait.com/logo.png",
+                    "width": 600,
+                    "height": 450,
+                    "caption": "صباغ الكويت"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://fanalsabaghkuwait.com/#breadcrumb",
+                    "itemListElement": allLinks.map((item, index) => ({
+                      "@type": "ListItem",
+                      "position": index + 1,
+                      "name": item.title,
+                      "item": "https://fanalsabaghkuwait.com/abo-yousef/" + item.href,
+                    })),
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://fanalsabaghkuwait.com/#website",
+                    "url": "https://fanalsabaghkuwait.com/",
+                    "name": "صباغ الكويت",
+                    "description": "صباغ الكويت 50713199 تركيب ورق جدران اصباغ الكوت صباغ شاطر ورخيص",
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://fanalsabaghkuwait.com/{search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ]
+                    , "inLanguage": "ar"
+                  }
+                ]
+              },
+            )
+          }}
+        />
+      </head>
       <body className={`${inter.className} ${elmessiri.className}`}>
         <ThemeProv>
           {children}

@@ -4,6 +4,9 @@ import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Splide, SplideSlide } from "@splidejs/react-splide"
 import "@splidejs/react-splide/css"
+import { Card } from "./ui/card"
+import { Phone } from "lucide-react"
+import Link from "next/link"
 
 const slides = [
   {
@@ -13,6 +16,7 @@ const slides = [
     description: "خدمات الصباغة والدهان المتميزة",
     buttonText: "اتصل بنا الآن",
     image: "/images/bg6.jpg",
+    phone: "50713199",
   },
   {
     id: 2,
@@ -21,14 +25,16 @@ const slides = [
     description: "نقدم أفضل خدمات الصباغة في الكويت",
     buttonText: "شاهد أعمالنا",
     image: "/images/bg5.jpg",
+    phone: "50713199",
   },
   {
     id: 3,
     title: "فريق محترف",
-    subtitle: "خبرة تزيد عن 15 عاماً",
+    subtitle: "خبرة تزيد عن 25 عاماً",
     description: "فريق من أمهر الصباغين المحترفين",
     buttonText: "احصل على عرض سعر",
     image: "/images/bg3.webp",
+    phone: "50713199",
   },
 ]
 
@@ -65,6 +71,23 @@ function AnimatedText({ lines, isActive, delay = 500 }: AnimatedTextProps) {
           {index === 0 && <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">{line}</h1>}
           {index === 1 && <h2 className="text-3xl md:text-4xl text-white/90 drop-shadow-lg">{line}</h2>}
           {index === 2 && <p className="text-xl md:text-2xl text-white/80 drop-shadow-lg">{line}</p>}
+          {index === 3 &&
+            <Link href={"tel:+96550713199"}>
+              <Card className="p-1 bg-red-50 border-red-200 w-[300px]">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-gray-900">هاتف</h4>
+                    <p className="text-2xl font-bold text-secondary">
+                      {line}
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+          }
         </div>
       ))}
     </div>
@@ -126,7 +149,7 @@ export function HeroSlider() {
                 <div className="container mx-auto px-4">
                   <div className="max-w-3xl">
                     <AnimatedText
-                      lines={[slide.title, slide.subtitle, slide.description]}
+                      lines={[slide.title, slide.subtitle, slide.description, slide.phone]}
                       isActive={currentSlide === index && isSlideActive}
                       delay={600}
                     />

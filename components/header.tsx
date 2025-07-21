@@ -17,6 +17,7 @@ import {
 import { Button } from "./ui/button"
 import clsx from "clsx"
 import { motion, AnimatePresence } from "framer-motion"
+import Image from "next/image"
 
 const Header = () => {
     const pathname = usePathname()
@@ -32,9 +33,26 @@ const Header = () => {
     return (
         <header className="sticky top-0 z-50 backdrop-blur bg-secondary text-primary border-b border-primary/10">
             <div className="container mx-auto px-4">
-                <nav className="py-4">
+                <nav className="py-1">
                     <div className="flex justify-between items-center">
-                        <div className="text-2xl font-bold">أبو يوسف للصباغة</div>
+                        <Link href="/">
+                            <div className="relative h-16 w-40">
+                                <Image
+                                    src="/logo.png"
+                                    alt="Abu Yousef Logo - أبو يوسف - صباغ الكويت"
+                                    fill
+                                    className="object-cover"
+                                />
+                                {/* <Image
+                                    src="/logo.png"
+                                    alt="Abu Yousef Logo"
+                                    width={200}
+                                    height={80}
+                                    priority
+                                    style={{ height: "auto" }} // optional if using custom styling
+                                /> */}
+                            </div>
+                        </Link>
 
                         {/* Desktop Menu */}
                         <div className="hidden md:flex space-x-8 space-x-reverse">
