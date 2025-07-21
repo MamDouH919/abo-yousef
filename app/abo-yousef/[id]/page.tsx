@@ -5,6 +5,7 @@ import { Container, Stack } from '@mui/material'
 import { Metadata } from 'next'
 import React from 'react'
 import allLinks from '@/lib/links.json'
+import Footer from '@/components/footer'
 
 export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
     const { id } = await params;
@@ -22,13 +23,16 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
     const { id } = await params;
 
     return (
-        <Container maxWidth="lg">
-            <Stack my={5} spacing={3} alignItems={"center"}>
-                <CustomLink href={"/"}>الرجوع الي القائمة الرئسية </CustomLink>
-                <PhoneStyle />
-                <LinksContent id={id} />
-            </Stack>
-        </Container>
+        <>
+            <Container maxWidth="lg">
+                <Stack my={5} spacing={3} alignItems={"center"}>
+                    <CustomLink href={"/"}>الرجوع الي القائمة الرئسية </CustomLink>
+                    <PhoneStyle />
+                    <LinksContent id={id} />
+                </Stack>
+            </Container>
+            <Footer onlyFooter/>
+        </>
     )
 }
 

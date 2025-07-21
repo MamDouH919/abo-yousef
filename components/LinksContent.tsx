@@ -511,15 +511,12 @@ const LinksContent = ({ id }: { id: string }) => {
 export default LinksContent;
 
 const ImageStyle = ({ src, alt }: { src: string | StaticImport, alt: string }) => {
-    return <div style={{ display: 'flex', flexDirection: 'column' }}>
+    return <div className="flex flex-col">
         <Image
-            loading='lazy'
+            loading="lazy"
             alt={alt}
             src={src}
-            style={{
-                width: '100%',
-                height: 'auto',
-            }}
+            className="w-full h-auto"
         />
     </div>
 }

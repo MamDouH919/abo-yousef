@@ -26,7 +26,7 @@ const Root = styled(Stack)(() => ({
 const PhoneStyle = () => {
     return (
         <Root mt={3} alignItems={"center"} spacing={2}>
-            <Typography fontSize={35} color={"primary.main"}>أبو يوسف للصباغة</Typography>
+            <Typography fontSize={35} color={"primary.main"}>أبو يوسف للأصباغ</Typography>
             <Stack
                 alignItems={"center"}
                 width="fit-content"

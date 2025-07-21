@@ -18,18 +18,14 @@ const Layout = ({
                 <Link
                     href="https://www.instagram.com/bkhyt.hlmy.2025"
                     target="_blank"
-                    className="pulse-wave w-14 h-14 rounded-full text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center"
-                    style={{
-                        background:
-                            "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
-                    }}
+                    rel="noreferrer"
+                    className="pulse-wave w-14 h-14 rounded-full text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center bg-instagram-gradient"
                 >
                     <Instagram className="w-8 h-8 rotate-animation" />
                 </Link>
                 <Link
-                // link for whatsapp link
-
                     href={"https://wa.me/+96550713199"}
+                    rel="noreferrer"
                     className="pulse-wave w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center whatsapp-float"
                     target="_blank"
                 >

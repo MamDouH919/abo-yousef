@@ -1,12 +1,17 @@
 import { Clock, MapPin, Phone } from 'lucide-react'
 import React from 'react'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
-const Footer = () => {
+const Footer = ({
+    onlyFooter = false
+}: {
+    onlyFooter?: boolean
+}) => {
     return (
         <footer className="relative">
             {/* Top Red Section */}
-            <div className="bg-secondary text-primary py-8 w-[80%] mx-auto mb-[-70px] relative z-10">
+            {!onlyFooter && <div className="bg-secondary text-primary py-8 w-[80%] mx-auto mb-[-70px] relative z-10">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-3 gap-8 text-center">
                         {/* Working Hours */}
@@ -37,10 +42,10 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>}
 
             {/* Middle Blue Section */}
-            <div className="bg-primary py-12 relative">
+            {!onlyFooter && <div className="bg-primary py-12 relative">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-6xl mx-auto">
                         <h2 className="text-3xl font-bold mb-6 border-b-2 border-yellow-400 inline-block pb-2 text-secondary pt-36">صباغ الكويت</h2>
@@ -52,12 +57,36 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div>}
 
             {/* Bottom Red Section */}
-            <div className="bg-secondary text-primary py-4">
+            {/* <div className="bg-secondary text-primary py-4">
                 <div className="container mx-auto px-4 text-center">
-                    <p className="text-sm">© حقوق النشر 2020 حل الحقوق محفوظة</p>
+                    <p className="text-sm">© حقوق النشر {new Date().getFullYear()} حل الحقوق محفوظة</p>
+                    <Link
+                        className='underline'
+                        title='creator'
+                        href='https://mamdouh.mountain-egy.site/'
+                        rel="noopener noreferrer" target="_blank"
+                    >
+                        Mamdouh Mohammed
+                    </Link>
+                </div>
+            </div> */}
+            <div className="bg-secondary text-primary py-6 border-t border-primary/20">
+                <div className="container mx-auto px-4 flex flex-col items-center justify-between gap-2 text-center md:text-left">
+                    <p className="text-sm md:text-base">
+                        © {new Date().getFullYear()} جميع الحقوق محفوظة
+                    </p>
+                    <Link
+                        className="text-sm md:text-base underline underline-offset-4 hover:text-primary/80 transition-colors duration-200"
+                        href="https://mamdouh.mountain-egy.site/"
+                        title="Creator"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        Mamdouh Mohammed
+                    </Link>
                 </div>
             </div>
         </footer>

@@ -49,7 +49,7 @@ const Page = () => {
                         <div className="relative w-full aspect-[2/1]">
                             <Image
                                 src="/images/bg3.webp"
-                                alt="خدمات الصباغة"
+                                alt="خدمات الأصباغ"
                                 fill
                                 className="object-cover rounded-2xl shadow-2xl"
                             />
@@ -152,7 +152,7 @@ const Page = () => {
                                         src="https://maps.google.com/maps?q=29.376101,48.0024664&z=11&output=embed"
                                         width="100%"
                                         height="100%"
-                                        style={{ border: 0 }}
+                                        
                                         allowFullScreen
                                         loading="lazy"
                                         referrerPolicy="no-referrer-when-downgrade"

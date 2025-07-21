@@ -278,11 +278,6 @@ body {
   }
 }
 
-.pulse-wave {
-  position: relative;
-  z-index: 1;
-}
-
 @keyframes rotate-wiggle {
 
   0%,
@@ -290,9 +285,21 @@ body {
     transform: rotate(0deg);
   }
 
-  50% {
+  25% {
     transform: rotate(-30deg);
   }
+
+  50% {
+    transform: rotate(30deg);
+  }
+}
+
+.pulse-wave {
+  position: relative;
+  z-index: 1;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  /* GPU acceleration */
 }
 
 .rotate-animation {
@@ -307,7 +314,16 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 9999px;
-  background: radial-gradient(circle, rgba(6, 6, 6, 0.4) 0%);
+  background: rgba(6, 6, 6, 0.4);
+  /* fallback for iOS */
   animation: wave-pulse 1s infinite;
   z-index: -1;
+  will-change: transform, opacity;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .pulse-wave::before {
+    background: rgba(6, 6, 6, 0.3);
+    /* slightly different style for iOS */
+  }
 }
