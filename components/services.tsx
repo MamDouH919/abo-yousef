@@ -46,7 +46,7 @@ const Services = () => {
                     <div className="relative w-full aspect-[2/1]">
                         <Image
                             src="/images/bg2.webp"
-                            alt="خدمات الصباغة"
+                            alt="خدمات الأصباغ"
                             fill
                             className="rounded-lg object-cover"
                         />

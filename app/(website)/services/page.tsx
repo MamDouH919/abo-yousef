@@ -11,7 +11,7 @@ const Page = () => {
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
                         <h1 className="text-3xl font-bold mb-4 text-secondary">
-                            نقدم خدمات صباغة مميزة في الكويت متميزون جداً
+                            نقدم خدمات الأصباغ مميزة في الكويت متميزون جداً
                         </h1>
                         <p className="text-gray-600">
                             أبو يوسف الأفضل في الكويت
