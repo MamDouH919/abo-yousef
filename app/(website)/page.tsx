@@ -15,6 +15,26 @@ export default function Home() {
             {/* Hero Slider */}
             <HeroSlider />
 
+            <div className="py-16 bg-primary">
+                <div className="container mx-auto px-4">
+                    <div className="flex items-center justify-center flex-col">
+                        <h1 className="text-5xl font-bold mb-6 text-secondary">
+                            صباغ الكويت
+                        </h1>
+                        <p className="text-lg mb-6 text-center">
+                            أبو يوسف تركيب ورق جدران اصباغ الكوت صباغ شاطر ورخيص
+                            <br />
+                            خدمات الأصباغ والدهان المتميزة
+                            <br />
+                            نقدم أفضل خدمات الأصباغ في الكويت
+                            <br />
+                            اتصل بنا الآن
+                            <br />
+
+                        </p>
+                    </div>
+                </div>
+            </div>
             {/* Services Section */}
             <Services />
 

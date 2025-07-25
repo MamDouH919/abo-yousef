@@ -48,7 +48,7 @@ const Portfolio = () => {
                                     <div className="relative">
                                         <Image
                                             src={item.image}
-                                            alt={item.title}
+                                            alt={item.title + " | " + "صباغ الكويت"}
                                             width={650}
                                             height={650}
                                             className={`w-full object-cover h-96`}

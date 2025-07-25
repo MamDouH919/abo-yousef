@@ -10,7 +10,7 @@ const WhyUs = () => {
                     <div className="relative w-full aspect-[2/1]">
                         <Image
                             src="/images/why-us.webp"
-                            alt="خدمات الأصباغ"
+                            alt="خدمات الأصباغ صباغ الكويت"
                             fill
                             className="rounded-lg object-cover"
                         />
