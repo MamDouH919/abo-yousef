@@ -8,7 +8,7 @@ const Faqs = () => {
         <section className="py-16 bg-gray-50">
             <div className="max-w-4xl mx-auto">
                 <header className="text-center mb-12">
-                    <h1 className="text-3xl font-bold mb-4 text-secondary">الأسئلة الشائعة</h1>
+                    <h2 className="text-3xl font-bold mb-4 text-secondary">الأسئلة الشائعة</h2>
                     <p className="text-gray-600">إجابات على أكثر الأسئلة شيوعاً حول خدماتنا</p>
                 </header>
                 <Accordion type="single" collapsible className="w-full">

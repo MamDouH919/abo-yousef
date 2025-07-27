@@ -64,9 +64,9 @@ const Page = () => {
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-6">
                             <div className="space-y-4">
-                                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                                     تواصل مع <span className="text-secondary">المعلم أبو يوسف</span>
-                                </h2>
+                                </h1>
                                 <p className="text-xl text-gray-600 leading-relaxed">
                                     نحن نتطلع إلى تقديم أفضل خدمة لكم. تواصل معنا طوال الوقت للحصول على خدمات فنية متميزة وموثوقة.
                                 </p>

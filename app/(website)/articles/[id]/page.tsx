@@ -29,8 +29,6 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
     return (
         <>
             <Container maxWidth="lg">
-                <Services />
-                <WhyUs />
                 <section>
                     <Stack my={5} spacing={3} alignItems={"center"}>
                         <h1 className="text-3xl font-bold text-secondary mb-4">{article?.title}</h1>

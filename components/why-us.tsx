@@ -17,7 +17,7 @@ const WhyUs = () => {
                     </div>
                     <div>
                         <header>
-                            <h1 className="text-3xl font-bold mb-6 text-secondary">ما يميزنا عن الآخرين؟</h1>
+                            <h2 className="text-3xl font-bold mb-6 text-secondary">ما يميزنا عن الآخرين؟</h2>
                         </header>
                         <div className="space-y-6">
                             <div className="flex items-start">

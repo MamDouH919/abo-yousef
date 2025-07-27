@@ -59,9 +59,7 @@ const Page = async () => {
     return (
         <>
             <Container maxWidth="lg">
-                <Services />
-                <WhyUs />
-                <Articles />
+                <Articles makeH1/>
             </Container>
         </>
     )

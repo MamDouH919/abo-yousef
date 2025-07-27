@@ -9,9 +9,9 @@ const Services = () => {
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
                         <header>
-                            <h1 className="text-3xl font-bold mb-6 text-secondary">
+                            <h2 className="text-3xl font-bold mb-6 text-secondary">
                                 الصباغ الأمهر في الكويت
-                            </h1>
+                            </h2>
                         </header>
                         <p className="text-lg mb-6">
                             نقدم مجموعة واسعة من الأصباغ الحديثة، بما في ذلك الأصباغ الداخلية والخارجية، الصبغ المطفي واللماع، بالإضافة إلى الصبغ بدون رائحة والصبغ الإيطالي المميز.

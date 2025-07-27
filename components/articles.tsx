@@ -4,12 +4,21 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
 import { Button } from './ui/button'
 import Link from 'next/link'
 
-const Articles = () => {
+const Articles = ({
+    makeH1 = false,
+}: {
+    makeH1?: boolean
+}) => {
     return (
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
             <div className="max-w-7xl mx-auto">
                 <header className="text-center mb-12">
-                    <h1 className="text-3xl font-bold mb-4 text-secondary">مقالات ونصائح حول صباغ الكويت</h1>
+                    {
+                        makeH1 ?
+                            <h1 className="text-3xl font-bold mb-4 text-secondary">مقالات ونصائح حول صباغ الكويت</h1>
+                            :
+                            <h2 className="text-3xl font-bold mb-4 text-secondary">مقالات ونصائح حول صباغ الكويت</h2>
+                    }
                     <p className="text-gray-600">اقرأ أحدث المقالات والنصائح المتعلقة بخدمات صباغة ودهان المنازل في الكويت</p>
                 </header>
 
@@ -17,12 +26,12 @@ const Articles = () => {
                     {articles.map((article, index) => (
                         <Card key={index} className="hover:shadow-lg transition-shadow">
                             <CardHeader>
-                                <h2 className="text-xl font-semibold text-gray-800">{article.title}</h2>
+                                <h3 className="text-xl font-semibold text-gray-800">{article.title}</h3>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-gray-600 leading-relaxed mb-4">
+                                <h4 className="text-gray-600 leading-relaxed mb-4">
                                     {article.content.substring(0, 120)}...
-                                </p>
+                                </h4>
                                 <Link href={`/articles/${article.slug}`} passHref title={article.title}>
                                     <Button variant="link" className="p-0 h-auto text-orange-600">
                                         اقرأ المزيد ←
