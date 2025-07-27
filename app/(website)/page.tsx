@@ -6,6 +6,8 @@ import Portfolio from "@/components/portfolio"
 import Cta from "@/components/cta"
 import Stats from "@/components/stats"
 import Links from "@/components/links"
+import Articles from "@/components/articles"
+import Faqs from "@/components/faqs"
 
 export default function Home() {
     return (
@@ -15,26 +17,27 @@ export default function Home() {
             {/* Hero Slider */}
             <HeroSlider />
 
-            <div className="py-16 bg-primary">
+            <div className="py-16">
                 <div className="container mx-auto px-4">
-                    <div className="flex items-center justify-center flex-col">
-                        <h1 className="text-5xl font-bold mb-6 text-secondary">
-                            صباغ الكويت
-                        </h1>
-                        <p className="text-lg mb-6 text-center">
-                            أبو يوسف تركيب ورق جدران اصباغ الكوت صباغ شاطر ورخيص
+                    <div className="flex flex-col items-center justify-center text-center">
+                        <header>
+                            <h1 className="text-5xl font-bold mb-6 text-secondary">
+                                صباغ الكويت - أبو يوسف
+                            </h1>
+                        </header>
+                        <p className="text-lg mb-6 leading-loose text-black-400 max-w-2xl">
+                            مرحبًا بكم في أفضل خدمات الصباغة في الكويت مع <strong>أبو يوسف</strong> – خبرة واحترافية في <strong>تركيب ورق الجدران</strong> و<span className="text-secondary">أحدث دهانات الكوت</span>.
                             <br />
-                            خدمات الأصباغ والدهان المتميزة
+                            نُقدّم لكم صباغ شاطر، سريع، وبأسعار مناسبة لجميع المناطق.
                             <br />
-                            نقدم أفضل خدمات الأصباغ في الكويت
+                            خدماتنا تشمل جميع مناطق الكويت بجودة عالية ومواد أصلية.
                             <br />
-                            اتصل بنا الآن
-                            <br />
-
+                            <strong>اتصل الآن</strong> على <a href="tel:50713199" className="underline text-secondary">50713199</a> للحصول على أفضل عرض!
                         </p>
                     </div>
                 </div>
             </div>
+
             {/* Services Section */}
             <Services />
 
@@ -53,6 +56,11 @@ export default function Home() {
             {/* Blog Section */}
 
             <Links />
+
+            {/* Articles Section */}
+            <Articles />
+
+            <Faqs />
         </>
 
     )

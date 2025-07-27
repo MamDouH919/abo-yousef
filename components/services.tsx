@@ -8,9 +8,11 @@ const Services = () => {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 className="text-3xl font-bold mb-6 text-secondary">
-                            الصباغ الأمهر في الكويت
-                        </h2>
+                        <header>
+                            <h1 className="text-3xl font-bold mb-6 text-secondary">
+                                الصباغ الأمهر في الكويت
+                            </h1>
+                        </header>
                         <p className="text-lg mb-6">
                             نقدم مجموعة واسعة من الأصباغ الحديثة، بما في ذلك الأصباغ الداخلية والخارجية، الصبغ المطفي واللماع، بالإضافة إلى الصبغ بدون رائحة والصبغ الإيطالي المميز.
                         </p>
@@ -45,8 +47,8 @@ const Services = () => {
 
                     <div className="relative w-full aspect-[2/1]">
                         <Image
-                            src="/images/bg2.webp"
-                            alt="خدمات الأصباغ"
+                            src="/images/sabagh-kuwait-services.webp"
+                            alt="خدمات الأصباغ في الكويت"
                             fill
                             className="rounded-lg object-cover"
                         />

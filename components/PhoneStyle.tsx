@@ -20,6 +20,7 @@ const Root = styled(Stack)(() => ({
         [`&:hover`]: {
             backgroundColor: "#0b7acc",
         },
+        zIndex: 10,
     },
 }));
 

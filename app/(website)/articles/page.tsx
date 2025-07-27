@@ -1,11 +1,12 @@
-import Cta from '@/components/cta'
-import Services from '@/components/services'
-import Stats from '@/components/stats'
-import { Metadata } from 'next';
+import { Container } from '@mui/material'
 import React from 'react'
+import Services from '@/components/services'
+import WhyUs from '@/components/why-us'
+import Articles from '@/components/articles'
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: "صباغ الكويت - أبو يوسف - 50713199 - معلومات عن صباغ الكويت",
+    title: "صباغ الكويت - أبو يوسف - 50713199 - المقالات",
     description: "خدمات الأصباغ ودهانات وبيع أفضل أنواع الأصباغ في الكويت. اتصل الآن بأفضل صباغ بالكويت للحصول على تشطيب احترافي بأسعار مناسبة عبر الهاتف.",
     robots: "index,follow",
     generator: 'mamdouh.mountain-egy.site',
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
         name: "صباغ الكويت - أبو يوسف - 50713199",
         url: "https://fanalsabaghkuwait.com",
     },
-    bookmarks: ["صباغ الكويت", "صباغ شاطر", "صباغ رخيص", "الكويت", "صباغ الكويت - أبو يوسف - 50713199"],
+    bookmarks: ["صباغ الكويت", "صباغ شاطر", "صباغ رخيص", "الكويت", "صباغ الكويت - أبو يوسف - 50713199", "أبو يوسف", "صباغ الكويت - 50713199", "المقالات", "خدمات صباغ الكويت", "تواصل مع صباغ الكويت", "معلومات عن صباغ الكويت"],
     alternates: {
         canonical: "https://fanalsabaghkuwait.com", // Canonical URL for SEO purposes
         languages: {
@@ -54,12 +55,14 @@ export const metadata: Metadata = {
     category: "خدمات الأصباغ",
 };
 
-const Page = () => {
+const Page = async () => {
     return (
         <>
-            <Services />
-            <Stats />
-            <Cta />
+            <Container maxWidth="lg">
+                <Services />
+                <WhyUs />
+                <Articles />
+            </Container>
         </>
     )
 }

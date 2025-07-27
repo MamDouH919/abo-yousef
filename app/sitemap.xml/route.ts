@@ -100,6 +100,15 @@ export async function GET() {
         "sabaagh-alromanisya",
     ]
 
+    const articles = [
+        "how-to-choose-best-painter-kuwait",
+        "types-of-paint-kuwait",
+        "painting-tips-kuwait",
+        "villa-painter-kuwait",
+        "exterior-paint-kuwait",
+        "why-choose-sabagh-kuwait",
+    ]
+
     // Static pages
     const staticPages = [
         "",
@@ -112,6 +121,8 @@ export async function GET() {
     const urls: string[] = [
         ...staticPages.map((slug) => `${baseUrl}/${slug}`),
         ...services.map((slug) => `${baseUrl}/abo-yousef/${slug}`),
+        ...articles.map((slug) => `${baseUrl}/articles/${slug}`),
+
     ];
 
     // Create sitemap XML

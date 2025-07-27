@@ -28,6 +28,7 @@ const Header = () => {
         { href: "/about-us", label: "عن صباغ الكويت", icon: UserRound },
         { href: "/services", label: "خدماتنا", icon: BookHeart },
         { href: "/contact", label: "اتصل بنا", icon: Phone },
+        { href: "/articles", label: "المقالات", icon: BookHeart },
     ]
 
     return (
@@ -41,6 +42,7 @@ const Header = () => {
                                     src="/logo.png"
                                     alt="Abu Yousef Logo - أبو يوسف - صباغ الكويت"
                                     fill
+                                    priority
                                     className="object-cover"
                                 />
                                 {/* <Image

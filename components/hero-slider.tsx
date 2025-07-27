@@ -15,7 +15,7 @@ const slides = [
     subtitle: "أفضل صباغ في الكويت",
     description: "خدمات الأصباغ والدهان المتميزة",
     buttonText: "اتصل بنا الآن",
-    image: "/images/bg6.jpg",
+    image: "/images/sabagh-kuwait-abo-yousef.jpg",
     phone: "50713199",
   },
   {
@@ -24,7 +24,7 @@ const slides = [
     subtitle: "جودة عالية وأسعار منافسة",
     description: "نقدم أفضل خدمات الأصباغ في الكويت",
     buttonText: "شاهد أعمالنا",
-    image: "/images/bg5.jpg",
+    image: "/images/sabagh-kuwait-about.jpg",
     phone: "50713199",
   },
   {
@@ -33,7 +33,7 @@ const slides = [
     subtitle: "خبرة تزيد عن 25 عاماً",
     description: "فريق من أمهر الصباغين المحترفين",
     buttonText: "احصل على عرض سعر",
-    image: "/images/bg3.webp",
+    image: "/images/sabagh-kuwait-team.webp",
     phone: "50713199",
   },
 ]

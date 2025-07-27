@@ -191,11 +191,11 @@ const Links = () => {
     return (
         <section className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold mb-4 text-secondary">
+                <header className="text-center mb-12">
+                    <h1 className="text-3xl font-bold mb-4 text-secondary">
                         صباغ الكويت
-                    </h2>
-                </div>
+                    </h1>
+                </header>
 
                 <div className="mt-6 flex flex-wrap justify-center gap-3">
                     {allLinks.map((element, index) => (
