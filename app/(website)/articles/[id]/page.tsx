@@ -1,13 +1,8 @@
-import { CustomLink } from '@/components/CustomLink'
-import LinksContent from '@/components/LinksContent'
-import PhoneStyle from '@/components/PhoneStyle'
 import { Container, Stack } from '@mui/material'
 import { Metadata } from 'next'
 import React from 'react'
 import articles from '@/lib/articles.json'
-import Footer from '@/components/footer'
-import Services from '@/components/services'
-import WhyUs from '@/components/why-us'
+import Articles from '@/components/articles';
 
 export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
     const { id } = await params;
@@ -35,6 +30,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
                         <p className="text-xl text-gray-600">{article?.content}</p>
                     </Stack>
                 </section>
+                <Articles />
             </Container>
         </>
     )

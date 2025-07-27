@@ -99,8 +99,8 @@ const Page = () => {
 
                         <div className="relative w-full aspect-[2/1]">
                             <Image
-                                src="/images/bg3.webp"
-                                alt="خدمات الأصباغ"
+                                src="/images/sabagh-kuwait-services.webp"
+                                alt="خدمات الأصباغ في الكويت"
                                 fill
                                 className="object-cover rounded-2xl shadow-2xl"
                             />
