@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: "صباغ الكويت - أبو يوسف - 50713199 - خدمات صباغ الكويت",
+    title: "صباغ الكويت - أبو يوسف - خدمات صباغ الكويت - 50713199",
     description: "خدمات الأصباغ ودهانات وبيع أفضل أنواع الأصباغ في الكويت. اتصل الآن بأفضل صباغ بالكويت للحصول على تشطيب احترافي بأسعار مناسبة عبر الهاتف.",
     robots: "index,follow",
     generator: 'mamdouh.mountain-egy.site',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         authors: ["صباغ الكويت", "https://fanalsabaghkuwait.com"],
         locale: "ar_AR",
         url: "https://fanalsabaghkuwait.com",
-        title: "صباغ الكويت - أبو يوسف - 50713199 - خدمات صباغ الكويت",
+        title: "صباغ الكويت - أبو يوسف - خدمات صباغ الكويت - 50713199",
         description: "خدمات الأصباغ ودهانات وبيع أفضل أنواع الأصباغ في الكويت. اتصل الآن بأفضل صباغ بالكويت للحصول على تشطيب احترافي بأسعار مناسبة عبر الهاتف.",
         images: [
             {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
                 alt: "صباغ الكويت",
             },
         ],
-        siteName: "صباغ الكويت - أبو يوسف - 50713199 - خدمات صباغ الكويت",
+        siteName: "صباغ الكويت - أبو يوسف - خدمات صباغ الكويت - 50713199",
         section: "خدمات الأصباغ",
         publishedTime: "2024-10-1T12:00:00Z", // Publication date of the article
         modifiedTime: "2024-10-10T14:00:00Z", // Last modified time (optional)
@@ -34,23 +34,23 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "صباغ الكويت - أبو يوسف - 50713199 - خدمات صباغ الكويت",
+        title: "صباغ الكويت - أبو يوسف - خدمات صباغ الكويت - 50713199",
         description: "خدمات الأصباغ ودهانات وبيع أفضل أنواع الأصباغ في الكويت. اتصل الآن بأفضل صباغ بالكويت للحصول على تشطيب احترافي بأسعار مناسبة عبر الهاتف.",
         images: "https://fanalsabaghkuwait.com/logo-dark.webp",
     },
     manifest: "/manifest.json",
     authors: {
-        name: "صباغ الكويت - أبو يوسف - 50713199 - خدمات صباغ الكويت",
+        name: "صباغ الكويت - أبو يوسف - خدمات صباغ الكويت - 50713199",
         url: "https://fanalsabaghkuwait.com",
     },
-    bookmarks: ["صباغ الكويت", "صباغ شاطر", "صباغ رخيص", "الكويت", "صباغ الكويت - أبو يوسف - 50713199 - خدمات صباغ الكويت"],
+    bookmarks: ["صباغ الكويت", "صباغ شاطر", "صباغ رخيص", "الكويت", "صباغ الكويت - أبو يوسف - خدمات صباغ الكويت - 50713199"],
     alternates: {
         canonical: "https://fanalsabaghkuwait.com", // Canonical URL for SEO purposes
         languages: {
             "ar": "https://fanalsabaghkuwait.com", // If you have an Arabic language version
         },
     },
-    applicationName: "صباغ الكويت - أبو يوسف - 50713199 - خدمات صباغ الكويت",
+    applicationName: "صباغ الكويت - أبو يوسف - خدمات صباغ الكويت - 50713199",
     creator: "mamdouh mohammed",
     category: "خدمات الأصباغ",
 };

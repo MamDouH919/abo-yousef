@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     const title = article?.title || 'صباغ الكويت'
 
     return {
-        title: `صباغ الكويت - 50713199 - ${title}`,
+        title: `${title} - صباغ الكويت - 50713199`,
         keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
         description: article?.content,
     }

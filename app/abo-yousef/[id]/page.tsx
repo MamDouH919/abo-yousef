@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
     const title = link?.title || 'صباغ الكويت'
 
     return {
-        title: `صباغ الكويت - 50713199 - صباغ شاطر ورخيص - ${title}`,
+        title: `${title} - صباغ شاطر ورخيص - صباغ الكويت - 50713199`,
         keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
     }
 }
@@ -31,7 +31,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
                     <LinksContent id={id} />
                 </Stack>
             </Container>
-            <Footer onlyFooter/>
+            <Footer onlyFooter />
         </>
     )
 }

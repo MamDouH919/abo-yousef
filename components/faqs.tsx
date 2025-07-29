@@ -11,7 +11,7 @@ const Faqs = () => {
                     <h2 className="text-3xl font-bold mb-4 text-secondary">الأسئلة الشائعة</h2>
                     <p className="text-gray-600">إجابات على أكثر الأسئلة شيوعاً حول خدماتنا</p>
                 </header>
-                <Accordion type="single" collapsible className="w-full">
+                <Accordion type="single" collapsible className="w-full px-4">
                     {faqs.map((faq, index) => (
                         <AccordionItem key={index} value={`item-${index}`}>
                             <AccordionTrigger className="text-right text-lg font-medium">{faq.question}</AccordionTrigger>
