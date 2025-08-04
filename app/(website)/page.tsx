@@ -1,13 +1,21 @@
-import HeroSlider from "@/components/hero-slider"
-import WhyUs from "@/components/why-us"
-import Portfolio from "@/components/portfolio"
-import Cta from "@/components/cta"
-import Stats from "@/components/stats"
-import Links from "@/components/links"
-import Articles from "@/components/articles"
-import Faqs from "@/components/faqs"
+// import HeroSlider from "@/components/hero-slider"
+// import WhyUs from "@/components/why-us"
+// import Portfolio from "@/components/portfolio"
+// import Cta from "@/components/cta"
+// import Stats from "@/components/stats"
+// import Links from "@/components/links"
+// import Articles from "@/components/articles"
+// import Faqs from "@/components/faqs"
 import dynamic from "next/dynamic"
 const Services = dynamic(() => import('@/components/services'))
+const WhyUs = dynamic(() => import('@/components/why-us'))
+const HeroSlider = dynamic(() => import('@/components/hero-slider'))
+const Portfolio = dynamic(() => import('@/components/portfolio'))
+const Cta = dynamic(() => import('@/components/cta'))
+const Stats = dynamic(() => import('@/components/stats'))
+const Links = dynamic(() => import('@/components/links'))
+const Faqs = dynamic(() => import('@/components/faqs'))
+const Articles = dynamic(() => import('@/components/articles'))
 
 export default function Home() {
     return (
