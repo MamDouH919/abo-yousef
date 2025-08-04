@@ -1,13 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Libre_Barcode_39, El_Messiri } from "next/font/google"
+// import { Libre_Barcode_39, El_Messiri } from "next/font/google"
 import "./globals.css"
+import "@splidejs/react-splide/css";
 import ThemeProv from "@/context/ThemeProv"
 import allLinks from "@/lib/links.json"
 import allArticles from "@/lib/articles.json"
 
-const inter = Libre_Barcode_39({ subsets: ["latin"], weight: "400" })
-const elmessiri = El_Messiri({ subsets: ["latin"], weight: "400" })
+// const inter = Libre_Barcode_39({ subsets: ["latin"], weight: "400" })
+// const elmessiri = El_Messiri({ subsets: ["latin"], weight: "400" })
 
 export const metadata: Metadata = {
   title: "صباغ الكويت - صباغ شاطر ورخيص - أبو يوسف 50713199",
@@ -72,15 +73,9 @@ export default function RootLayout({
         <meta httpEquiv="content-language" content="ar" />
         <link
           rel="apple-touch-icon"
-          href="/apple-icon?<generated>"
-          type="image/<generated>"
-          sizes="<generated>"
-        />
-        <link
-          rel="icon"
-          href="/icon?<generated>"
-          type="image/<generated>"
-          sizes="<generated>"
+          href="/apple-icon.png"
+          type="image/png"
+          sizes="180x180"
         />
         <script
           type="application/ld+json"
@@ -180,7 +175,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} ${elmessiri.className}`}>
+      <body>
+      {/* <body className={`${inter.className} ${elmessiri.className}`}> */}
         <ThemeProv>
           {children}
         </ThemeProv>

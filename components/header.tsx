@@ -75,7 +75,13 @@ const Header = () => {
 
                         {/* Mobile Menu Button */}
                         <div className="md:hidden">
-                            <Button variant="ghost" size="icon" onClick={() => setMenuOpen(!menuOpen)}>
+                            <Button
+                                variant="ghost"
+                                size="icon"
+                                onClick={() => setMenuOpen(!menuOpen)}
+                                title="القائمة"
+                                aria-label={menuOpen ? "إغلاق القائمة" : "فتح القائمة"}
+                            >
                                 {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                             </Button>
                         </div>

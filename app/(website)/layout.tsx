@@ -1,8 +1,6 @@
-import React from 'react'
-
-import { Button } from "@/components/ui/button"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+
 import { Instagram } from 'lucide-react'
 import Link from 'next/link'
 
@@ -11,6 +9,7 @@ const Layout = ({
 }: {
     children: React.ReactNode
 }) => {
+
     return (
         <div className="min-h-screen">
             {/* Floating Social Media Icons */}
@@ -19,6 +18,7 @@ const Layout = ({
                     href="https://www.instagram.com/bkhyt.hlmy.2025"
                     target="_blank"
                     rel="noreferrer"
+                    title='حساب صباغ الكويت على الانستجرام'
                     className="pulse-wave w-14 h-14 rounded-full text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center bg-instagram-gradient"
                 >
                     <Instagram className="w-8 h-8 rotate-animation" />
@@ -26,6 +26,7 @@ const Layout = ({
                 <Link
                     href={"https://wa.me/+96550713199"}
                     rel="noreferrer"
+                    title='تواصل مع صباغ الكويت على الواتساب'
                     className="pulse-wave w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center whatsapp-float"
                     target="_blank"
                 >

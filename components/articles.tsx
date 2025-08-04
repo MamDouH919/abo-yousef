@@ -33,7 +33,7 @@ const Articles = ({
                                     {article.content.substring(0, 120)}...
                                 </h4>
                                 <Link href={`/articles/${article.slug}`} passHref title={article.title}>
-                                    <Button variant="link" className="p-0 h-auto text-orange-600">
+                                    <Button variant="link" className="p-0 h-auto text-secondary">
                                         اقرأ المزيد ←
                                     </Button>
                                 </Link>

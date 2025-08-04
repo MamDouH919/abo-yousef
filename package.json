@@ -2,19 +2,26 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
   },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "not IE 11"
+  ],
   "dependencies": {
+    "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@hookform/resolvers": "^3.9.1",
     "@mui/material": "^7.2.0",
     "@mui/material-nextjs": "^7.2.0",
-    "@mui/styled-engine-sc": "^7.2.0",
+    "@next/bundle-analyzer": "^15.4.5",
     "@radix-ui/react-accordion": "1.2.2",
     "@radix-ui/react-alert-dialog": "1.1.4",
     "@radix-ui/react-aspect-ratio": "1.1.1",
@@ -43,7 +50,7 @@
     "@radix-ui/react-toggle-group": "1.1.1",
     "@radix-ui/react-tooltip": "1.1.6",
     "@splidejs/react-splide": "latest",
-    "autoprefixer": "^10.4.20",
+    "@types/node": "^24.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.0.4",
@@ -61,19 +68,17 @@
     "react-resizable-panels": "^2.1.7",
     "recharts": "2.15.0",
     "sonner": "^1.7.1",
-    "styled-components": "^6.1.19",
+    "stylis": "^4.3.6",
     "stylis-plugin-rtl": "^2.1.1",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
-    "vaul": "^0.9.6",
-    "zod": "^3.24.1"
+    "typescript": "^5.9.2",
+    "vaul": "^0.9.6"
   },
   "devDependencies": {
-    "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "postcss": "^8.5",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5"
+    "@types/stylis": "^4.2.7",
+    "tailwindcss": "^3.4.17"
   }
 }
