@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-// import "@splidejs/react-splide/css";
+import "@splidejs/react-splide/css";
 import Image from "next/image";
 import { Card, CardContent } from "./ui/card";
 

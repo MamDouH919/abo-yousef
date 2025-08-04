@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-// import "@splidejs/react-splide/css";
+import "@splidejs/react-splide/css";
 import { Card } from "./ui/card";
 import { Phone } from "lucide-react";
 import Link from "next/link";
@@ -145,8 +145,10 @@ export default function HeroSlider() {
                 src={slide.image || "/placeholder.svg"}
                 alt={slide.title}
                 fill
-                className="md:object-cover object-cover"
+                className="object-cover"
                 priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
+                placeholder="empty"
               />
               <div className="absolute inset-0 bg-gradient-to-r to-black/60 via-black/40 from-transparent" />
 

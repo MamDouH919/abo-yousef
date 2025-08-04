@@ -2,7 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 // import { Libre_Barcode_39, El_Messiri } from "next/font/google"
 import "./globals.css"
-import "@splidejs/react-splide/css";
 import ThemeProv from "@/context/ThemeProv"
 import allLinks from "@/lib/links.json"
 import allArticles from "@/lib/articles.json"
