@@ -10,10 +10,9 @@
     "start": "next start"
   },
   "browserslist": [
-    "last 2 Chrome versions",
-    "last 2 Firefox versions",
-    "last 2 Safari versions",
-    "not IE 11"
+    "defaults and supports es6-module",
+    "not IE 11",
+    "not dead"
   ],
   "dependencies": {
     "@emotion/cache": "^11.14.0",

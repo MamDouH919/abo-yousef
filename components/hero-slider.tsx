@@ -7,6 +7,7 @@ import "@splidejs/react-splide/css";
 import { Card } from "./ui/card";
 import { Phone } from "lucide-react";
 import Link from "next/link";
+import slide1Image from "/public/images/sabagh-kuwait-abo-yousef.webp";
 
 const slides = [
   {
@@ -15,7 +16,7 @@ const slides = [
     subtitle: "أفضل صباغ في الكويت",
     description: "خدمات الأصباغ والدهان المتميزة",
     buttonText: "اتصل بنا الآن",
-    image: "/images/sabagh-kuwait-abo-yousef.webp",
+    image: slide1Image,
     phone: "50713199",
     ariaLabel: "أبو يوسف - صباغ الكويت",
   },
@@ -99,6 +100,14 @@ export default function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isSlideActive, setIsSlideActive] = useState(true);
 
+  // i want make sometjing after 3 seconds
+  const [isSlideActiveFirst, setIsSlideActiveFirst] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsSlideActiveFirst(false);
+    }, 3000);
+  }, []);
+
   const handleSlideChange = (splide: any, newIndex: number) => {
     setIsSlideActive(false);
     setTimeout(() => {
@@ -142,13 +151,14 @@ export default function HeroSlider() {
           <SplideSlide key={slide.id}>
             <div className="relative h-full w-full">
               <Image
-                src={slide.image || "/placeholder.svg"}
                 alt={slide.title}
-                fill
                 className="object-cover"
+                src={index === 0 ? isSlideActiveFirst ? "/images/low-quality-placeholder.webp" : slide.image : slide.image}
+                placeholder="blur"
+                blurDataURL={ "/images/low-quality-placeholder.webp"}
+                fill
                 priority={index === 0}
                 loading={index === 0 ? "eager" : "lazy"}
-                placeholder="empty"
               />
               <div className="absolute inset-0 bg-gradient-to-r to-black/60 via-black/40 from-transparent" />
 
@@ -158,7 +168,7 @@ export default function HeroSlider() {
                     <AnimatedText
                       lines={[slide.title, slide.subtitle, slide.description, slide.phone]}
                       isActive={currentSlide === index && isSlideActive}
-                      delay={600}
+                      delay={400}
                     />
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link';
-import React from 'react'
+import React, { useState } from 'react'
 import { Badge } from './ui/badge';
 
 const links = [
@@ -188,6 +188,14 @@ export const zones = [
 export const allLinks = links.concat(zones)
 
 const Links = () => {
+    const [visibleCount, setVisibleCount] = useState(20); // Start with 20 items
+
+    const handleLoadMore = () => {
+        setVisibleCount(prev => prev + 20);
+    };
+
+    const hasMore = visibleCount < allLinks.length;
+
     return (
         <section className="py-16 bg-gray-50">
             <div className="container mx-auto px-4">
@@ -198,17 +206,28 @@ const Links = () => {
                 </header>
 
                 <div className="mt-6 flex flex-wrap justify-center gap-3">
-                    {allLinks.map((element, index) => (
+                    {allLinks.slice(0, visibleCount).map((element, index) => (
                         <Link key={index} title={element.title} href={`abo-yousef/${element.href}`}>
-                            <Badge variant="outline" className='px-4 py-2 text-sm border-secondary'>
+                            <Badge variant="outline" className="px-4 py-2 text-sm border-secondary">
                                 {element.title}
                             </Badge>
                         </Link>
                     ))}
                 </div>
+
+                {hasMore && (
+                    <div className="mt-8 text-center">
+                        <button
+                            onClick={handleLoadMore}
+                            className="px-6 py-2 border border-secondary text-secondary rounded hover:bg-secondary hover:text-white transition"
+                        >
+                            تحميل المزيد
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
-    )
+    );
 }
 
 export default Links

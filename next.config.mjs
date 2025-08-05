@@ -5,7 +5,8 @@ const config = withBundleAnalyzer({
 })({
   productionBrowserSourceMaps: true,
   experimental: {
-    legacyBrowsers: false, // 👈 this disables transpiling/polyfilling for legacy
+    legacyBrowsers: false,
+    esmExternals: 'loose',
   },
   eslint: {
     ignoreDuringBuilds: true,
