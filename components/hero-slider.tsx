@@ -71,8 +71,8 @@ function AnimatedText({ lines, isActive, delay = 500 }: AnimatedTextProps) {
           className={`transition-all duration-700 transform ${index < visibleLines ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
         >
-          {index === 0 && <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">{line}</h1>}
-          {index === 1 && <h2 className="text-3xl md:text-4xl text-white/90 drop-shadow-lg">{line}</h2>}
+          {index === 0 && <p className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">{line}</p>}
+          {index === 1 && <p className="text-3xl md:text-4xl text-white/90 drop-shadow-lg">{line}</p>}
           {index === 2 && <p className="text-xl md:text-2xl text-white/80 drop-shadow-lg">{line}</p>}
           {index === 3 && (
             <Link href={`tel:+965${line}`}>

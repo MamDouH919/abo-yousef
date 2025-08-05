@@ -27,24 +27,15 @@ export default function Home() {
                     <div className="flex flex-col items-center justify-center text-center">
                         <header>
                             <h1 className="text-5xl font-bold mb-6 text-secondary font-sans">
-                                صباغ الكويت - أبو يوسف
+                                صباغ الكويت
                             </h1>
                         </header>
                         <p className="text-lg mb-6 leading-loose text-black-400 max-w-2xl min-h-[220px] font-sans">
-                            مرحبًا بكم في أفضل خدمات الصباغة في الكويت مع{" "}
-                            <strong>أبو يوسف</strong> – خبرة واحترافية في{" "}
-                            <strong>تركيب ورق الجدران</strong> و
-                            <span className="text-secondary">أحدث دهانات الكوت</span>.
-                            <br />
-                            نُقدّم لكم صباغ شاطر، سريع، وبأسعار مناسبة لجميع المناطق.
-                            <br />
-                            خدماتنا تشمل جميع مناطق الكويت بجودة عالية ومواد أصلية.
-                            <br />
-                            <strong>اتصل الآن</strong> على{" "}
-                            <a href="tel:50713199" className="underline text-secondary">
-                                50713199
-                            </a>{" "}
-                            للحصول على أفضل عرض!
+                            <b>صباغ الكويت</b> <strong>أبو يوسف</strong> يقدم أفضل خدمات الدهانات و<span className="text-secondary">تركيب ورق الجدران</span> باحترافية عالية.
+                            نستخدم <strong>أحدث دهانات الكوت</strong> ومواد أصلية بجودة ممتازة لجميع المنازل والمكاتب.
+                            فريقنا يتميز بالسرعة، الدقة، والأسعار المناسبة في جميع مناطق الكويت.
+                            إذا كنت تبحث عن <b>صباغ الكويت</b> الموثوق، نحن خيارك الأفضل بخبرة طويلة.
+                            <strong>اتصل الآن</strong> على <a href="tel:50713199" className="underline text-secondary">50713199</a> واحصل على عرض مميز!
                         </p>
                     </div>
                 </div>
