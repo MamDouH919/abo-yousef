@@ -1,27 +1,24 @@
 import type React from "react"
 import type { Metadata } from "next"
-// import { Libre_Barcode_39, El_Messiri } from "next/font/google"
 import "./globals.css"
 import ThemeProv from "@/context/ThemeProv"
 import allLinks from "@/lib/links.json"
 import allArticles from "@/lib/articles.json"
 
-// const inter = Libre_Barcode_39({ subsets: ["latin"], weight: "400" })
-// const elmessiri = El_Messiri({ subsets: ["latin"], weight: "400" })
-
 export const metadata: Metadata = {
-  title: "صباغ الكويت - صباغ شاطر ورخيص - أبو يوسف 50713199",
-  description: "خدمات الأصباغ ودهانات وبيع أفضل أنواع الأصباغ في الكويت. اتصل الآن بأفضل صباغ بالكويت للحصول على تشطيب احترافي بأسعار مناسبة عبر الهاتف.",
+  title: "صباغ الكويت ✔️ شاطر ورخيص - أبو يوسف 50713199",
+  description: "صباغ الكويت خدمات الأصباغ ودهانات وبيع أفضل أنواع الأصباغ في الكويت. اتصل الآن بأفضل صباغ بالكويت للحصول على تشطيب احترافي بأسعار مناسبة عبر الهاتف.",
   robots: "index,follow",
-  generator: 'mamdouh.mountain-egy.site',
-  keywords: "صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, أبو يوسف, صباغ الكويت - 50713199 - صباغ شاطر ورخيص , أفضل صباغ في الكويت, الكويت, الاصباغ, الدهان, الصباغ",
+  generator: "mamdouh.mountain-egy.site",
+  keywords: "صباغ الكويت, صباغ الكويت شاطر, صباغ الكويت رخيص, صباغ الكويت داخلي وخارجي, صباغ الكويت حديث, صباغ الكويت بأفضل الأسعار, صباغ الكويت أبو يوسف, صباغ الكويت 50713199, أفضل صباغ الكويت, صباغ في الكويت, صباغ ودهان الكويت, صباغ الكويت المحترف, صباغ الكويت منازل, صباغ الكويت تجاري",
   openGraph: {
     type: "article",
     authors: ["صباغ الكويت", "https://fanalsabaghkuwait.com"],
     locale: "ar_AR",
+    alternateLocale: ["en_US"], // تم الإضافة
     url: "https://fanalsabaghkuwait.com",
-    title: "صباغ الكويت - صباغ شاطر ورخيص - أبو يوسف 50713199",
-    description: "خدمات الأصباغ ودهانات وبيع أفضل أنواع الأصباغ في الكويت. اتصل الآن بأفضل صباغ بالكويت للحصول على تشطيب احترافي بأسعار مناسبة عبر الهاتف.",
+    title: "صباغ الكويت ✔️ شاطر ورخيص - أبو يوسف 50713199",
+    description: "صباغ الكويت خدمات الأصباغ ودهانات وبيع أفضل أنواع الأصباغ في الكويت. اتصل الآن بأفضل صباغ بالكويت للحصول على تشطيب احترافي بأسعار مناسبة عبر الهاتف.",
     images: [
       {
         url: "https://fanalsabaghkuwait.com/logo-dark.webp",
@@ -30,152 +27,177 @@ export const metadata: Metadata = {
         alt: "صباغ الكويت",
       },
     ],
-    siteName: "صباغ الكويت - صباغ شاطر ورخيص - أبو يوسف 50713199",
+    siteName: "صباغ الكويت ✔️ شاطر ورخيص - أبو يوسف 50713199",
     section: "خدمات الأصباغ",
-    publishedTime: "2024-10-1T12:00:00Z", // Publication date of the article
-    modifiedTime: "2024-10-10T14:00:00Z", // Last modified time (optional)
-    alternateLocale: "ar"
+    publishedTime: "2024-10-1T12:00:00Z",
+    modifiedTime: "2024-10-10T14:00:00Z",
+
   },
   twitter: {
     card: "summary_large_image",
-    title: "صباغ الكويت - صباغ شاطر ورخيص - أبو يوسف 50713199",
-    description: "خدمات الأصباغ ودهانات وبيع أفضل أنواع الأصباغ في الكويت. اتصل الآن بأفضل صباغ بالكويت للحصول على تشطيب احترافي بأسعار مناسبة عبر الهاتف.",
+    title: "صباغ الكويت ✔️ شاطر ورخيص - أبو يوسف 50713199",
+    description: "صباغ الكويت خدمات الأصباغ ودهانات وبيع أفضل أنواع الأصباغ في الكويت. اتصل الآن بأفضل صباغ بالكويت للحصول على تشطيب احترافي بأسعار مناسبة عبر الهاتف.",
     images: "https://fanalsabaghkuwait.com/logo-dark.webp",
   },
   manifest: "/manifest.json",
   authors: {
-    name: "صباغ الكويت - صباغ شاطر ورخيص - أبو يوسف 50713199",
+    name: "صباغ الكويت ✔️ شاطر ورخيص - أبو يوسف 50713199",
     url: "https://fanalsabaghkuwait.com",
   },
-  bookmarks: ["صباغ الكويت", "صباغ شاطر", "صباغ رخيص", "الكويت", "صباغ الكويت - صباغ شاطر ورخيص - أبو يوسف 50713199"],
+  bookmarks: ["صباغ الكويت", "صباغ شاطر", "صباغ رخيص", "الكويت", "صباغ الكويت ✔️ شاطر ورخيص - أبو يوسف 50713199"],
   alternates: {
-    canonical: "https://fanalsabaghkuwait.com", // Canonical URL for SEO purposes
+    canonical: "https://fanalsabaghkuwait.com",
     languages: {
-      "ar": "https://fanalsabaghkuwait.com", // If you have an Arabic language version
+      ar: "https://fanalsabaghkuwait.com",
     },
   },
-  applicationName: "صباغ الكويت - صباغ شاطر ورخيص - أبو يوسف 50713199",
+  applicationName: "صباغ الكويت ✔️ شاطر ورخيص - أبو يوسف 50713199",
   creator: "mamdouh mohammed",
   category: "خدمات الأصباغ",
 };
 
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ar" dir="rtl">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#990011" /> 
         <meta httpEquiv="content-language" content="ar" />
+        <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
           href="/apple-icon.png"
           type="image/png"
           sizes="180x180"
         />
+        <link rel="preload" href="/logo-dark.webp" as="image" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(
-              {
-                "@context": "https://schema.org",
-                "@graph": [
-                  {
-                    "@type": "WebPage",
-                    "@id": "https://fanalsabaghkuwait.com/",
-                    "url": "https://fanalsabaghkuwait.com/",
-                    "name": "صباغ الكويت - صباغ شاطر ورخيص - أبو يوسف 50713199",
-                    "isPartOf": { "@id": "https://fanalsabaghkuwait.com#website" },
-                    "primaryImageOfPage": { "@id": "https://fanalsabaghkuwait.com/#primaryimage" },
-                    "image": { "@id": "https://fanalsabaghkuwait.com/#primaryimage" },
-                    "thumbnailUrl": "https://fanalsabaghkuwait.com/logo-dark.webp",
-                    "datePublished": "2020-12-29T13:47:49+00:00", "dateModified": "2024-10-01T07:59:36+00:00",
-                    "description": "صباغ الكويت , هل تريد رقم صباغ شاطر ورخيص بالكويت ؟ نوفر لك افضل تصميمات وديكورات منزليه احترافيه فني تركيب ورق جدران ممتاز اتصل الان",
-                    "breadcrumb": { "@id": "https://fanalsabaghkuwait.com/#breadcrumb" },
-                    "inLanguage": "ar",
-                    "potentialAction": [{ "@type": "ReadAction", "target": ["https://fanalsabaghkuwait.com/"] }]
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebPage",
+                  "@id": "https://fanalsabaghkuwait.com/#webpage",
+                  url: "https://fanalsabaghkuwait.com/",
+                  name: "صباغ الكويت ✔️ شاطر ورخيص - أبو يوسف 50713199",
+                  isPartOf: { "@id": "https://fanalsabaghkuwait.com/#website" },
+                  primaryImageOfPage: { "@id": "https://fanalsabaghkuwait.com/#primaryimage" },
+                  image: { "@id": "https://fanalsabaghkuwait.com/#primaryimage" },
+                  thumbnailUrl: "https://fanalsabaghkuwait.com/logo-dark.webp",
+                  datePublished: "2020-12-29T13:47:49+00:00",
+                  dateModified: "2024-10-10T14:00:00+00:00",
+                  description: "أفضل خدمات الأصباغ والدهانات وورق الجدران في الكويت.",
+                  breadcrumb: { "@id": "https://fanalsabaghkuwait.com/#breadcrumb" },
+                  inLanguage: "ar",
+                  potentialAction: [{ "@type": "ReadAction", target: ["https://fanalsabaghkuwait.com/"] }]
+                },
+                {
+                  "@type": "ImageObject",
+                  inLanguage: "ar",
+                  "@id": "https://fanalsabaghkuwait.com/#primaryimage",
+                  url: "https://fanalsabaghkuwait.com/logo-dark.webp",
+                  contentUrl: "https://fanalsabaghkuwait.com/logo-dark.webp",
+                  width: 1200,
+                  height: 630,
+                  caption: "صباغ الكويت"
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": "https://fanalsabaghkuwait.com/#breadcrumb",
+                  itemListElement: [
+                    ...allLinks.map((item, index) => ({
+                      "@type": "ListItem",
+                      position: index + 1,
+                      name: item.title,
+                      item: "https://fanalsabaghkuwait.com/abo-yousef/" + item.href,
+                    })),
+                    ...allArticles.map((item, index) => ({
+                      "@type": "ListItem",
+                      position: index + 101,
+                      name: item.title,
+                      item: "https://fanalsabaghkuwait.com/articles/" + item.slug,
+                    })),
+                    {
+                      "@type": "ListItem",
+                      position: 100,
+                      name: "المقالات",
+                      item: "https://fanalsabaghkuwait.com/articles",
+                    },
+                  ],
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://fanalsabaghkuwait.com/#website",
+                  url: "https://fanalsabaghkuwait.com/",
+                  name: "صباغ الكويت",
+                  description: "خدمات الأصباغ ودهانات عالية الجودة في الكويت.",
+                  potentialAction: [
+                    {
+                      "@type": "SearchAction",
+                      target: {
+                        "@type": "EntryPoint",
+                        urlTemplate: "https://fanalsabaghkuwait.com/{search_term_string}"
+                      },
+                      "query-input": "required name=search_term_string"
+                    }
+                  ],
+                  inLanguage: "ar"
+                },
+                {
+                  "@type": "LocalBusiness",
+                  "@id": "https://fanalsabaghkuwait.com/#localbusiness",
+                  name: "صباغ الكويت - أبو يوسف",
+                  image: "https://fanalsabaghkuwait.com/logo-dark.webp",
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "Kuwait City",
+                    addressLocality: "Kuwait City",
+                    addressCountry: "KW"
                   },
-                  {
-                    "@type": "ImageObject",
-                    "inLanguage": "ar",
-                    "@id": "https://fanalsabaghkuwait.com/#primaryimage",
-                    "url": "https://fanalsabaghkuwait.com/logo-dark.webp",
-                    "contentUrl": "https://fanalsabaghkuwait.com/logo-dark.webp",
-                    "width": 600,
-                    "height": 450,
-                    "caption": "صباغ الكويت"
+                  geo: {
+                    "@type": "GeoCoordinates",
+                    latitude: 29.3759,
+                    longitude: 47.9774
                   },
-                  {
-                    "@type": "BreadcrumbList",
-                    "@id": "https://fanalsabaghkuwait.com/#breadcrumb",
-                    "itemListElement": [
-                      ...allLinks.map((item, index) => ({
-                        "@type": "ListItem",
-                        "position": index + 1,
-                        "name": item.title,
-                        "item": "https://fanalsabaghkuwait.com/abo-yousef/" + item.href,
-                      })),
-                      ...allArticles.map((item, index) => ({
-                        "@type": "ListItem",
-                        "position": index + 101,
-                        "name": item.title,
-                        "item": "https://fanalsabaghkuwait.com/articles/" + item.slug,
-                      })),
-                      {
-                        "@type": "ListItem",
-                        "position": 100,
-                        "name": "المقالات",
-                        "item": "https://fanalsabaghkuwait.com/articles",
-                      },
-                      {
-                        "@type": "ListItem",
-                        "position": 110,
-                        "name": "خدمات صباغ الكويت",
-                        "item": "https://fanalsabaghkuwait.com/services",
-                      },
-                      {
-                        "@type": "ListItem",
-                        "position": 110,
-                        "name": "تواصل مع صباغ الكويت",
-                        "item": "https://fanalsabaghkuwait.com/contact",
-                      },
-                      {
-                        "@type": "ListItem",
-                        "position": 110,
-                        "name": "معلومات عن صباغ الكويت",
-                        "item": "https://fanalsabaghkuwait.com/about-us",
-                      },
-                    ],
-                  },
-                  {
-                    "@type": "WebSite",
-                    "@id": "https://fanalsabaghkuwait.com/#website",
-                    "url": "https://fanalsabaghkuwait.com/",
-                    "name": "صباغ الكويت",
-                    "description": "صباغ الكويت 50713199 تركيب ورق جدران اصباغ الكوت صباغ شاطر ورخيص",
-                    "potentialAction": [
-                      {
-                        "@type": "SearchAction",
-                        "target": {
-                          "@type": "EntryPoint",
-                          "urlTemplate": "https://fanalsabaghkuwait.com/{search_term_string}"
-                        },
-                        "query-input": "required name=search_term_string"
-                      }
-                    ]
-                    , "inLanguage": "ar"
+                  url: "https://fanalsabaghkuwait.com",
+                  telephone: "+96550713199",
+                  priceRange: "KD",
+                  openingHours: "Mo-Su 08:00-22:00",
+                  description: "أفضل صباغ بالكويت مع خدمات الدهانات والديكورات وورق الجدران.",
+                  mainEntityOfPage: { "@id": "https://fanalsabaghkuwait.com/#webpage" },
+                  areaServed: { "@type": "Place", name: "Kuwait" },
+                  hasPart: [
+                    { "@type": "WebPageElement", name: "خدمات", url: "https://fanalsabaghkuwait.com/#services" },
+                    { "@type": "WebPageElement", name: "لماذا نحن", url: "https://fanalsabaghkuwait.com/#whyus" },
+                    { "@type": "WebPageElement", name: "معرض الأعمال", url: "https://fanalsabaghkuwait.com/#portfolio" },
+                    { "@type": "WebPageElement", name: "إحصائيات", url: "https://fanalsabaghkuwait.com/#stats" },
+                    { "@type": "WebPageElement", name: "اتصل بنا", url: "https://fanalsabaghkuwait.com/#cta" },
+                    { "@type": "WebPageElement", name: "الروابط", url: "https://fanalsabaghkuwait.com/#links" },
+                    { "@type": "WebPageElement", name: "الأسئلة الشائعة", url: "https://fanalsabaghkuwait.com/#faqs" },
+                    { "@type": "WebPageElement", name: "المقالات", url: "https://fanalsabaghkuwait.com/#articles" }
+                  ]
+                },
+                {
+                  "@type": "Service",
+                  serviceType: "خدمات الأصباغ والدهانات",
+                  provider: { "@id": "https://fanalsabaghkuwait.com/#localbusiness" },
+                  mainEntityOfPage: { "@id": "https://fanalsabaghkuwait.com/#webpage" },
+                  areaServed: { "@type": "Place", name: "Kuwait" },
+                  availableChannel: {
+                    "@type": "ServiceChannel",
+                    serviceLocation: { "@type": "Place", name: "Kuwait" }
                   }
-                ]
-              },
-            )
+                }
+              ]
+            })
           }}
         />
       </head>
       <body>
-      {/* <body className={`${inter.className} ${elmessiri.className}`}> */}
         <ThemeProv>
           {children}
         </ThemeProv>

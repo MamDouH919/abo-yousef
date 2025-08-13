@@ -115,6 +115,7 @@ export async function GET() {
         "about-us",
         "services",
         "contact",
+        "articles",
     ];
 
     // Build all URLs

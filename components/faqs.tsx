@@ -5,7 +5,7 @@ import faqs from "@/lib/faqs.json"
 const Faqs = () => {
     return (
 
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-gray-50" id="faqs">
             <div className="max-w-4xl mx-auto">
                 <header className="text-center mb-12">
                     <h2 className="text-3xl font-bold mb-4 text-secondary">الأسئلة الشائعة</h2>

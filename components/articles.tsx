@@ -10,7 +10,7 @@ const Articles = ({
     makeH1?: boolean
 }) => {
     return (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50" id="articles">
             <div className="max-w-7xl mx-auto">
                 <header className="text-center mb-12">
                     {

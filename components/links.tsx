@@ -197,7 +197,10 @@ const Links = () => {
     const hasMore = visibleCount < allLinks.length;
 
     return (
-        <section className="py-16 bg-gray-50">
+        <section
+            className="py-16 bg-gray-50"
+            id="links"
+        >
             <div className="container mx-auto px-4">
                 <header className="text-center mb-12">
                     <h2 className="text-3xl font-bold mb-4 text-secondary">

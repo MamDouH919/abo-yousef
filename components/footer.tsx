@@ -18,7 +18,7 @@ const Footer = ({
                         <div className="flex flex-col items-center">
                             <div className="flex items-center mb-4">
                                 <Clock className="w-8 h-8 ml-3 text-yellow-400" />
-                                <h3 className="text-xl font-bold border-b-2 border-yellow-400 pb-1">ساعات العمل</h3>
+                                <p className="text-xl font-bold border-b-2 border-yellow-400 pb-1">ساعات العمل</p>
                             </div>
                             <p className="text-lg">كل أيام الأسبوع 24 ساعة</p>
                         </div>
@@ -27,7 +27,7 @@ const Footer = ({
                         <div className="flex flex-col items-center">
                             <div className="flex items-center mb-4">
                                 <MapPin className="w-8 h-8 ml-3 text-yellow-400" />
-                                <h3 className="text-xl font-bold border-b-2 border-yellow-400 pb-1">مواقعنا</h3>
+                                <p className="text-xl font-bold border-b-2 border-yellow-400 pb-1">مواقعنا</p>
                             </div>
                             <p className="text-lg text-center">كل محافظات الكويت</p>
                         </div>
@@ -36,7 +36,7 @@ const Footer = ({
                         <div className="flex flex-col items-center">
                             <div className="flex items-center mb-4">
                                 <Phone className="w-8 h-8 ml-3 text-yellow-400" />
-                                <h3 className="text-xl font-bold border-b-2 border-yellow-400 pb-1">رقم الهاتف</h3>
+                                <p className="text-xl font-bold border-b-2 border-yellow-400 pb-1">رقم الهاتف</p>
                             </div>
                             <p className="text-lg font-bold">50713199</p>
                         </div>
@@ -48,7 +48,7 @@ const Footer = ({
             {!onlyFooter && <div className="bg-primary py-12 relative">
                 <div className="container mx-auto px-4">
                     <div className="text-center max-w-6xl mx-auto">
-                        <h2 className="text-3xl font-bold mb-6 border-b-2 border-yellow-400 inline-block pb-2 text-secondary pt-36">صباغ الكويت</h2>
+                        <p className="text-3xl font-bold mb-6 border-b-2 border-yellow-400 inline-block pb-2 text-secondary pt-36">صباغ الكويت</p>
                         <p className="text-lg leading-relaxed">
                             نقدم خدمات بمنتهى الاحترافية والدقة بدون أي خلل، حيث أن <b>صباغ الكويت</b> يقدم كافة الخدمات التي تخص
                             أحدث الطلعات والتشطيبات على أعلى مستوى. يتم إنجاز جميع المهام في وقت قياسي، حيث أن <b>صباغ شاطر بالكويت</b> يحرص
