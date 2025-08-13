@@ -23,7 +23,7 @@ const SubHero = () => {
 
                     <p className="text-md mb-6 leading-loose text-black-400">
                         فريقنا يتميز بالسرعة، الدقة، والأسعار المناسبة في جميع مناطق الكويت.
-                        إذا كنت تبحث عن <strong>صباغ الكويت</strong> الموثوق، نحن خيارك الأفضل بخبرة طويلة.
+                        إذا كنت تبحث عن <em>صباغ الكويت</em> الموثوق، نحن خيارك الأفضل بخبرة طويلة.
                     </p>
 
                     <p className="text-md leading-loose text-black-400">

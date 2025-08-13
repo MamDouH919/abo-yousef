@@ -26,12 +26,12 @@ const Articles = ({
                     {articles.map((article, index) => (
                         <Card key={index} className="hover:shadow-lg transition-shadow">
                             <CardHeader>
-                                <h3 className="text-xl font-semibold text-gray-800">{article.title}</h3>
+                                <p className="text-xl font-semibold text-gray-800">{article.title}</p>
                             </CardHeader>
                             <CardContent>
-                                <h4 className="text-gray-600 leading-relaxed mb-4">
+                                <p className="text-gray-600 leading-relaxed mb-4">
                                     {article.content.substring(0, 120)}...
-                                </h4>
+                                </p>
                                 <Link href={`/articles/${article.slug}`} passHref title={article.title}>
                                     <Button variant="link" className="p-0 h-auto text-secondary">
                                         اقرأ المزيد ←

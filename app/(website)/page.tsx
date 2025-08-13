@@ -9,6 +9,7 @@ const Links = dynamic(() => import('@/components/links'))
 const Faqs = dynamic(() => import('@/components/faqs'))
 const Articles = dynamic(() => import('@/components/articles'))
 const SubHero = dynamic(() => import('@/components/sub-hero'))
+const AboutUs = dynamic(() => import('@/components/about'))
 
 export default function Home() {
     return (
@@ -18,9 +19,11 @@ export default function Home() {
             
             <SubHero />
 
+
             {/* Services Section */}
             <Services />
 
+            <AboutUs />
             {/* Why Choose Us */}
             <WhyUs />
 

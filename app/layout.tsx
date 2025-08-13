@@ -60,8 +60,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ar" dir="rtl">
       <head>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#990011" /> 
         <meta httpEquiv="content-language" content="ar" />
         <link rel="icon" href="/favicon.ico" />

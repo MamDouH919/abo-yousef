@@ -105,57 +105,16 @@ const Page = () => {
                                 className="object-cover rounded-2xl shadow-2xl"
                             />
                         </div>
-                        {/* <div className="relative">
-                            <div className="relative z-10">
-                                <Image
-                                    src="/images/bg3.webp"
-                                    alt="المعلم أبو سارة - فني متخصص"
-                                    width={500}
-                                    height={600}
-                                    className="rounded-2xl shadow-2xl"
-                                    priority
-                                />
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </section>
-
-            {/* Services Section */}
-            {/* <section className="py-16 px-4 bg-gray-50">
-                <div className="container mx-auto">
-                    <div className="text-center mb-12">
-                        <h3 className="text-3xl font-bold text-gray-900 mb-4">خدماتنا المتميزة</h3>
-                        <p className="text-gray-600 text-lg">نقدم مجموعة شاملة من الخدمات الفنية المتخصصة</p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {[
-                            { title: "صيانة كهربائية", desc: "إصلاح وصيانة جميع الأعطال الكهربائية", icon: "⚡" },
-                            { title: "سباكة", desc: "خدمات السباكة وإصلاح التسريبات", icon: "🔧" },
-                            { title: "تكييف", desc: "صيانة وإصلاح أجهزة التكييف", icon: "❄️" },
-                            { title: "نجارة", desc: "أعمال النجارة والتركيبات", icon: "🔨" },
-                            { title: "دهانات", desc: "أعمال الدهان والديكور", icon: "🎨" },
-                            { title: "عام", desc: "خدمات الصيانة العامة", icon: "🛠️" },
-                        ].map((service, index) => (
-                            <Card key={index} className="hover:shadow-lg transition-shadow">
-                                <CardContent className="p-6 text-center">
-                                    <div className="text-4xl mb-4">{service.icon}</div>
-                                    <h4 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h4>
-                                    <p className="text-gray-600">{service.desc}</p>
-                                </CardContent>
-                            </Card>
-                        ))}
-                    </div>
-                </div>
-            </section> */}
 
             {/* Contact & Location Section */}
             <section className="py-16 px-4">
                 <div className="container mx-auto">
                     <div className="grid lg:grid-cols-2 gap-12">
                         <div>
-                            <h3 className="text-3xl font-bold text-gray-900 mb-6">تواصل معنا</h3>
+                            <p className="text-3xl font-bold text-gray-900 mb-6">تواصل معنا</p>
                             <div className="space-y-6">
                                 <Card className="p-6 bg-blue-50 border-blue-200">
                                     <div className="flex items-center gap-4">
@@ -163,7 +122,7 @@ const Page = () => {
                                             <Phone className="w-6 h-6 text-white" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-gray-900">هاتف</h4>
+                                            <p className="font-bold text-gray-900">هاتف</p>
                                             <p className="text-2xl font-bold text-blue-600">50713199</p>
                                         </div>
                                     </div>
@@ -175,7 +134,7 @@ const Page = () => {
                                             <MapPin className="w-6 h-6 text-white" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-gray-900">الموقع</h4>
+                                            <p className="font-bold text-gray-900">الموقع</p>
                                             <p className="text-gray-600">الكويت</p>
                                         </div>
                                     </div>
@@ -187,7 +146,7 @@ const Page = () => {
                                             <Clock className="w-6 h-6 text-white" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-gray-900">ساعات العمل</h4>
+                                            <p className="font-bold text-gray-900">ساعات العمل</p>
                                             <p className="text-gray-600">متاح طوال الوقت</p>
                                         </div>
                                     </div>
@@ -196,7 +155,7 @@ const Page = () => {
                         </div>
 
                         <div>
-                            <h3 className="text-3xl font-bold text-gray-900 mb-6">موقعنا</h3>
+                            <p className="text-3xl font-bold text-gray-900 mb-6">موقعنا</p>
                             <Card className="overflow-hidden">
                                 <div className="aspect-video">
                                     <iframe

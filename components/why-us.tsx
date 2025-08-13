@@ -55,7 +55,7 @@ const WhyUs = () => {
                     <Icon className="w-6 h-6" aria-hidden="true" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">{title}</h3>
+                    <p className="text-xl font-semibold mb-2">{title}</p>
                     <p className="text-gray-600">{description}</p>
                   </div>
                 </li>
