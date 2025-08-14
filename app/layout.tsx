@@ -1,9 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
 import "./globals.css"
-import ThemeProv from "@/context/ThemeProv"
 import allLinks from "@/lib/links.json"
 import allArticles from "@/lib/articles.json"
+import dynamic from "next/dynamic"
+
+const ThemeProv = dynamic(() => import("@/context/ThemeProv"))
 
 export const metadata: Metadata = {
   title: "صباغ الكويت ✔️ شاطر ورخيص - أبو يوسف 50713199",

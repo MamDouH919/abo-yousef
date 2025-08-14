@@ -18,9 +18,17 @@ const AboutUs = () => {
                     <li>خدمات سريعة بأسعار تنافسية.</li>
                     <li>استخدام أصباغ ودهانات صديقة للبيئة.</li>
                 </ul>
-                <a href="tel:50713199"
-                    className="inline-block bg-yellow-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-yellow-600 transition">
-                    📞 اتصل الآن: 50713199
+                <a href="tel:+96550713199"
+                    className="
+                    inline-block
+                     bg-secondary
+                      text-white
+                       font-bold 
+                       py-2
+                        px-6
+                        hover:bg-secondary/90
+                         rounded-lg  transition">
+                    اتصل الآن: 50713199
                 </a>
             </div>
         </section>
